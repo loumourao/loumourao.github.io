@@ -1,66 +1,73 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-10-31T02:57:42+00:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Lourenço’s Blog</title><subtitle>This is a simple blog to showcase projects I&apos;m working/ have worked on and more.</subtitle><author><name>Lourenco Mourao</name></author><entry><title type="html">An intro to my blog</title><link href="http://localhost:4000/blog-intro/" rel="alternate" type="text/html" title="An intro to my blog" /><published>2022-10-30T00:00:00+01:00</published><updated>2022-10-30T00:00:00+01:00</updated><id>http://localhost:4000/blog-intro</id><content type="html" xml:base="http://localhost:4000/blog-intro/">&lt;p&gt;This blog will serve as a simple portfolio where I will be showcasing projects that I’m working and have worked on, be it of academic, professional or spontaneous nature.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-11-01T00:13:39+00:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Lourenço’s Blog</title><subtitle>This is a simple blog to showcase projects I&apos;m working/ have worked on and more.</subtitle><author><name>Lourenco Mourao</name></author><entry><title type="html">An overview of Müller, P. et al (2006) ‘Procedural modeling of buildings’</title><link href="http://localhost:4000/thesis/procedural-modeling-of-buildings/" rel="alternate" type="text/html" title="An overview of Müller, P. et al (2006) ‘Procedural modeling of buildings’" /><published>2022-11-01T00:00:00+00:00</published><updated>2022-11-01T00:00:00+00:00</updated><id>http://localhost:4000/thesis/procedural-modeling-of-buildings</id><content type="html" xml:base="http://localhost:4000/thesis/procedural-modeling-of-buildings/">&lt;h2 id=&quot;disclaimer&quot;&gt;Disclaimer:&lt;/h2&gt;
 
-&lt;p&gt;Additionally, it will serve as an aiding tool to organize my thoughts for researching purposes - from summarizing papers pertaining to my investigational scope, to creating a taxonomic overview of research materials that I will come across with.&lt;/p&gt;
-
-&lt;p&gt;I hope you enjoy my journey through the fascinating world that Computer Science has to offer!&lt;/p&gt;
-
-&lt;p&gt;How marvelous it is to explore, in awe, the generous contributions that researchers have brought to the advancement of humanity, and how wonderful would it be to contribute to that cause…&lt;/p&gt;</content><author><name>Lourenço Mourão</name></author><summary type="html">This blog will serve as a simple portfolio where I will be showcasing projects that I’m working and have worked on, be it of academic, professional or spontaneous nature.</summary></entry><entry><title type="html">An overview of Müller, Pascal, et al ‘Procedural Modeling of Buildings’ paper</title><link href="http://localhost:4000/thesis/procedural-modeling-of-buildings/" rel="alternate" type="text/html" title="An overview of Müller, Pascal, et al ‘Procedural Modeling of Buildings’ paper" /><published>2022-10-30T00:00:00+01:00</published><updated>2022-10-30T00:00:00+01:00</updated><id>http://localhost:4000/thesis/procedural-modeling-of-buildings</id><content type="html" xml:base="http://localhost:4000/thesis/procedural-modeling-of-buildings/">&lt;h2 id=&quot;disclaimer&quot;&gt;Disclaimer:&lt;/h2&gt;
-
-&lt;p&gt;This post serves as a mere summary for organizational purposes which will hopefully come in useful for the completion of my thesis’ report.&lt;/p&gt;
-
-&lt;p&gt;I will carefully attempt to appropriately cite and quote the authors’ work so that their intellectual property is preserved.&lt;/p&gt;
-
-&lt;p&gt;As a natural side effect of the paper’s publication date, the notion of time relative to that of grammatical conjugation within this overview might not old true to current standards.&lt;/p&gt;
-
-&lt;p&gt;Details regarding technically heavy terminology and implementation are excluded from this overview and will be reserved for future analysis.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;This post serves as a mere summary of the aforementioned research paper for organizational purposes which will hopefully come in useful for the completion of my thesis’ report.&lt;/li&gt;
+  &lt;li&gt;I will carefully attempt to appropriately cite and quote the authors’ work so that their intellectual property is preserved.&lt;/li&gt;
+  &lt;li&gt;As a natural side effect of the paper’s publication date, the notion of time relative to that of grammatical conjugation within this overview might not old true to current standards.&lt;/li&gt;
+  &lt;li&gt;Details regarding technically heavy terminology and implementation are excluded from this overview and will be reserved for future analysis.&lt;/li&gt;
+  &lt;li&gt;Personal comments of my authorship (if any) with regards to the research paper in question will be clearly delimited from the overview in the &lt;strong&gt;‘Comments and more’&lt;/strong&gt; section&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h2 id=&quot;overview&quot;&gt;Overview:&lt;/h2&gt;
 
-&lt;p&gt;The &lt;em&gt;Müller, Pascal, et al “Procedural Modeling of Buildings”&lt;/em&gt; paper presents a shape grammar, &lt;em&gt;CGA Shape&lt;/em&gt;, for the procedural modeling of building shells and highlights important benefits which the entertainment and architectural domain can benefit from, namely low cost production and efficient generation of massive urban models with a high level-of-detail.&lt;/p&gt;
-
-&lt;p&gt;Additionally, it demonstrates solutions to previously unsolved modeling problems related to consistent mass modeling with volumetric shapes of arbitrary orientation and it is the first paper to address the aspect of volumetric mass modeling of buildings including the design of roofs.&lt;/p&gt;
+&lt;p&gt;The &lt;em&gt;Müller, P. et al (2006) “Procedural Modeling of Buildings”&lt;/em&gt; paper presents a shape grammar, &lt;em&gt;CGA shape&lt;/em&gt;, for the procedural modeling of buildings and demonstrates solutions to previously unsolved problems constituting important benefits to both the entertainment and architectural domain, namely low cost production and efficient generation of massive urban models with a high level-of-detail (LOD).&lt;/p&gt;
 
 &lt;h2 id=&quot;challenges-that-motivated-this-paper&quot;&gt;Challenges that motivated this paper:&lt;/h2&gt;
 
-&lt;p&gt;The authors identified a set of challenges that served as a motivational force to propose a solution:&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Müller, P. et al (2006)&lt;/em&gt; identified a set of challenges that served as a motivational force to propose a solution:&lt;/p&gt;
 &lt;ol&gt;
   &lt;li&gt;Modeling large 3D environments is both laborious and expensive&lt;/li&gt;
-  &lt;li&gt;Previous solutions were not able to generate sufficient geometric detail to buildings and were prone to unwanted intersections of architectural elements (Parish and Muller) (Show Fig. 2)&lt;/li&gt;
-  &lt;li&gt;Split rules are only sufficient for simple mass models, mass models can’t be easily changed, and objects of arbitrary orientation cannot be easily handled (Wonka et al)&lt;/li&gt;
-  &lt;li&gt;The derivation of shape grammars is intrinsically complex and usually done manually, or by computer, with a human deciding on the rules to apply 
- Solution: Shape grammars can be simplified to set grammars to make them more amenable to computer implementation (Wonka et al)&lt;/li&gt;
+  &lt;li&gt;Previous solutions &lt;em&gt;(Parish and Muller (2001))&lt;/em&gt; were not able to generate sufficient geometric detail to buildings and were prone to unwanted intersections of architectural elements&lt;/li&gt;
+  &lt;li&gt;Split rules &lt;em&gt;(Wonka et al (2003))&lt;/em&gt; are only sufficient for simple mass models, mass models can’t be easily changed, and objects of arbitrary orientation cannot be easily handled&lt;/li&gt;
+  &lt;li&gt;Deriving shape grammars is extremely complex and either done manually, or by computer, with external human help
+    &lt;ul&gt;
+      &lt;li&gt;Solution: Simplifying shape grammars to set grammars to facilitate computer implementation &lt;em&gt;(Wonka et al (2003))&lt;/em&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;h2 id=&quot;major-contributions&quot;&gt;Major contributions:&lt;/h2&gt;
 
-&lt;p&gt;The &lt;em&gt;Müller, Pascal, et al “Procedural Modeling of Buildings”&lt;/em&gt; paper constitute important contributions that are worth mentioning:&lt;/p&gt;
+&lt;p&gt;The &lt;em&gt;Müller, P. et al (2006). “Procedural Modeling of Buildings”&lt;/em&gt; paper constitutes important contributions:&lt;/p&gt;
 &lt;ol&gt;
-  &lt;li&gt;A grammar-based solution, &lt;em&gt;CGA Shape&lt;/em&gt;, which is an extension of set grammars introduced by &lt;em&gt;Wonka et al&lt;/em&gt; capable of generating detailed building shells stemming from complex mass models&lt;/li&gt;
-  &lt;li&gt;A procedural approach to model detailed buildings with consistent mass models without being restricted to axis aligned shapes, including roof surfaces and rotated shapes&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;CGA shape&lt;/em&gt; - An extension of set grammars introduced by &lt;em&gt;Wonka et al (2003)&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;A procedural approach to model highly detailed buildings with consistent mass models without being restricted to axis aligned shapes while, at the same time, including roof surfaces and rotated shapes&lt;/li&gt;
   &lt;li&gt;Application related details in the context of procedural modeling of buildings - shape rules definition, concise notation, modeling strategies&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h2 id=&quot;an-overview-of-cga-shape&quot;&gt;An overview of &lt;em&gt;CGA Shape&lt;/em&gt;:&lt;/h2&gt;
+&lt;h2 id=&quot;an-overview-of-cga-shape&quot;&gt;An overview of &lt;em&gt;CGA shape&lt;/em&gt;:&lt;/h2&gt;
 
-&lt;p&gt;On a general view, &lt;em&gt;Müller, Pascal, et al’s CGA shape&lt;/em&gt; is powerful enough to specify complex shapes:&lt;/p&gt;
+&lt;p&gt;On a general view, &lt;em&gt;Müller, P. et al (2006)&lt;/em&gt; proposal is powerful enough to specify complex shapes:&lt;/p&gt;
 &lt;ol&gt;
-  &lt;li&gt;Building mass models are constructed as a union of volumetric shapes&lt;/li&gt;
-  &lt;li&gt;Arbitrary rotations of shapes and cylinder inclusion in the shape vocabulary (show Fig. 6 as an example of rotations)&lt;/li&gt;
-  &lt;li&gt;Basic roof shapes inclusion - Gambrel, cone, gabled, hipped, cross-gable, mansard&lt;/li&gt;
+  &lt;li&gt;Building mass models are constructed as a union of volumetric shapes and a combination of operations - scaling, translation, splits&lt;/li&gt;
+  &lt;li&gt;Arbitrary rotations of shapes&lt;/li&gt;
+  &lt;li&gt;Cylinder inclusion in the shape vocabulary&lt;/li&gt;
+  &lt;li&gt;Inclusion of basic roof shapes - Gambrel, cone, gabled, hipped, cross-gable, mansard&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;As a result, &lt;em&gt;CGA Shape&lt;/em&gt; is able to generate buildings with high visual fidelity by employing production rules that obey the following iterative process:&lt;/p&gt;
+&lt;p&gt;According to &lt;em&gt;Müller, P. et al (2006)&lt;/em&gt;, shape formulation via &lt;em&gt;CGA shape&lt;/em&gt; follows the below-mentioned principles:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Representation of shapes via:
+    &lt;ul&gt;
+      &lt;li&gt;Symbol (string) - Terminal/ Non-terminal symbols&lt;/li&gt;
+      &lt;li&gt;Geometric and numeric attributes - Positional vectors, cartesian vectors, and size that, together, comprise an oriented bounding box (scope)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Shape replacement via production rules&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;As a result, &lt;em&gt;CGA shape&lt;/em&gt; is able to generate buildings with high visual fidelity by employing production rules that obey the following iterative process:&lt;/p&gt;
 &lt;ol&gt;
   &lt;li&gt;Create the building’s volumetric model (mass model)&lt;/li&gt;
   &lt;li&gt;Construct its façade&lt;/li&gt;
   &lt;li&gt;Add details for windows, doors, and ornaments&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;This process constitutes a major benefit - the creation of an hierarchical structure that allows reusing production rules for procedural variations&lt;/p&gt;
+&lt;p&gt;As referred by &lt;em&gt;Müller, P. et al (2006)&lt;/em&gt;, this process constitutes a major benefit - the creation of an hierarchical structure that allows reusing production rules for procedural variations&lt;/p&gt;
 
 &lt;h2 id=&quot;mass-model-construction&quot;&gt;Mass model construction:&lt;/h2&gt;
 
-&lt;p&gt;The authors propose two possible ways to construct a mass model:&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Müller, P. et al (2006)&lt;/em&gt; propose two possible ways to construct a mass model:&lt;/p&gt;
 &lt;ol&gt;
   &lt;li&gt;Building lot as an axiom of the grammar
     &lt;ul&gt;
@@ -69,40 +76,51 @@
   &lt;/li&gt;
   &lt;li&gt;Importing from GIS database or architectural model
     &lt;ul&gt;
-      &lt;li&gt;Tries to classify the imported model as basic shapes already defined in the shape vocabulary. If such an approach proves not to be possible, it uses general extruded footprint together with a general roof obtained by straight skeleton computation&lt;/li&gt;
-      &lt;li&gt;Problem: Restrictive when it comes to modifications in the mass model (if any)&lt;/li&gt;
+      &lt;li&gt;Attempt at classifying the imported model as basic shapes already defined in the shape vocabulary. If such an approach proves impossible, it uses general extruded footprint together with a general roof obtained by straight skeleton computation&lt;/li&gt;
+      &lt;li&gt;Problem: Restrictive when it comes to modifications in the mass model&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;h2 id=&quot;façade-construction&quot;&gt;Façade construction:&lt;/h2&gt;
 
-&lt;p&gt;With regards to directly computing visible façade surfaces, the authors enumerate the following problems (show Fig. 8):&lt;/p&gt;
+&lt;p&gt;With regards to directly computing visible façade surfaces, &lt;em&gt;Müller, P. et al (2006)&lt;/em&gt; enumerate the following problems:&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;Visible surfaces can be general polygons (not necessarily trivial to compute)&lt;/li&gt;
-  &lt;li&gt;It is not clear how to write meaningful shape rules for general polygons&lt;/li&gt;
-  &lt;li&gt;There is no simple mechanism to assign non-terminal symbols for the façade grammar, because these are mainly outputs of algorithms and not of production rules&lt;/li&gt;
+  &lt;li&gt;Writing meaningful shape rules for general polygons is not straightforward&lt;/li&gt;
+  &lt;li&gt;Assigning non-terminal symbols for the façade grammar is not trivial (mainly outputs of algorithms and not of production rules)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;As such, in order to overcome the aforementioned challenges, the authors proposed the following modeling strategy:&lt;/p&gt;
+&lt;p&gt;As such, in order to overcome the aforementioned challenges, &lt;em&gt;Müller, P. et al (2006)&lt;/em&gt; propose a modeling strategy that works for arbitrarily aligned polygons:&lt;/p&gt;
 &lt;ol&gt;
-  &lt;li&gt;Generate two-dimensional scopes aligned with façade surfaces and roof surfaces by extracting the faces of the 3D shapes with a component split
- Correctly aligned and parametrized resulting 2D scopes&lt;/li&gt;
-  &lt;li&gt;Extract edges by generating 1D scopes&lt;/li&gt;
-  &lt;li&gt;This works for arbitrarily aligned polygons such as roof surfaces and façade surfaces typically aligned with the up axis in the world coordinate system&lt;/li&gt;
-  &lt;li&gt;Resulting quads and triangles are then refined&lt;/li&gt;
-  &lt;li&gt;After a shape is reduced to 2D it is often replaced by 3D through subsequent rule applications
- Solution to consistent design:
-     - Testing spatial overlap (occlusion)
-     - Testing nearby important lines and planes in the shape configuration (snap lines)
-This model retains the simplicity necessary for procedural modeling while allowing to work many configurations of mass models.&lt;/li&gt;
+  &lt;li&gt;2D scopes generation aligned with façade and roof surfaces by extracting the faces of 3D shapes with a component split
+    &lt;ul&gt;
+      &lt;li&gt;This keeps the resulting 2D faces correctly aligned and parametrized&lt;/li&gt;
+      &lt;li&gt;Similarly, edge extraction can be performed by generating 1D scopes&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Refinement of resulting quads and triangles through the grammar&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;As mentioned by &lt;em&gt;Müller, P. et al (2006)&lt;/em&gt;, this model allows to work on many configurations of mass models, while retaining the necessary simplicity for procedural modeling.&lt;/p&gt;
+
+&lt;p&gt;Additionally, &lt;em&gt;Müller, P. et al (2006)&lt;/em&gt; mention that after a shape is reduced to 2D, it is often replaced by 3D through subsequent rule application. As such, for the sake of consistency, they propose two solutions:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Testing spatial overlap (occlusion)&lt;/li&gt;
+  &lt;li&gt;Testing nearby important lines and planes in the shape configuration (snap lines)&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;h3 id=&quot;occlusion&quot;&gt;Occlusion&lt;/h3&gt;
 
+&lt;p&gt;&lt;em&gt;Müller, P. et al (2006)&lt;/em&gt; propose a solution to avoid placing façade elements on the intersection of the mass model’s volumetric shapes by employing the following mechanisms:&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;Occlusion queries that test for intersections between shapes (no occlusion, partial occlusion, full occlusion)&lt;/li&gt;
-  &lt;li&gt;Simplest query can check if a selected shape is occluded by any other shape&lt;/li&gt;
+  &lt;li&gt;Occlusion queries that test for intersections between shapes
+    &lt;ul&gt;
+      &lt;li&gt;No occlusion&lt;/li&gt;
+      &lt;li&gt;Partial occlusion&lt;/li&gt;
+      &lt;li&gt;Full occlusion&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
   &lt;li&gt;There are several variations to query subsets of a shape’s configuration
     &lt;ul&gt;
       &lt;li&gt;Occlusion against all shapes (even inactive ones)&lt;/li&gt;
@@ -110,31 +128,33 @@ This model retains the simplicity necessary for procedural modeling while allowi
       &lt;li&gt;Occlusion against all shapes except the selected shape’s predecessors&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;Type of intersection computation can also be modified to include distance for analyzing occlusions when enlarging a model&lt;/li&gt;
+  &lt;li&gt;The intersection type can also include distance for analyzing occlusions when enlarging a model&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&quot;snapping&quot;&gt;Snapping&lt;/h3&gt;
 
+&lt;p&gt;To further improve the layout of the façade’s structure, &lt;em&gt;Müller, P. et al (2006)&lt;/em&gt; propose a mechanism to be performed in 2D faces of volumetric shapes, as detailed below:&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;Occlusion makes it possible to avoid placing façade elements on the intersection of volumetric shapes constituting the mass model, but the structure of the façade’s layout can further be improved&lt;/li&gt;
-  &lt;li&gt;Improvement - Alter existing shape rules to snap to a dominant face or line (snap shapes) in the shape configuration&lt;/li&gt;
-  &lt;li&gt;These operations will be performed in 2D faces of the volumetric shapes&lt;/li&gt;
-  &lt;li&gt;Snap lines work for repeat split and subdivision split:
-  Repeat:
-      - Snap lines divide the scope into different parts and the repeat rule is invoked for each part separately
-  Subdivision:
-      - Snap line just alters the closest split and leaves everything else unmodified&lt;/li&gt;
+  &lt;li&gt;Alter existing shape rules to snap to a dominant face or line in the shape configuration (snap shapes)&lt;/li&gt;
+  &lt;li&gt;There are two types of splits that snap lines can be applied to:
+    &lt;ul&gt;
+      &lt;li&gt;&lt;strong&gt;Repeat split:&lt;/strong&gt; Scope division and repeat rule invocation to each divided part via snap lines&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Subdivision split:&lt;/strong&gt; The closest split is altered via snap lines (everything else is kept unchanged)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;discussion&quot;&gt;Discussion:&lt;/h2&gt;
 
+&lt;p&gt;&lt;em&gt;Müller, P. et al (2006)&lt;/em&gt; also enumerate relevant advantages, disadvantages, and differences of &lt;em&gt;CGA shape&lt;/em&gt; when compared to other solutions, such as:&lt;/p&gt;
+
 &lt;h3 id=&quot;comparison-to-mesh-modeling-tools&quot;&gt;Comparison to mesh modeling tools:&lt;/h3&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Existing commercial scripting to accelerate modeling processes can only replicate parts of &lt;em&gt;CGA Shape&lt;/em&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;CGA Shape&lt;/em&gt; models are significantly more detailed than modeling practices in the entertainment industry&lt;/li&gt;
-  &lt;li&gt;While the global structure, the positioning of individual shapes, level-of-detail control, and the data handling of large models is a strength of &lt;em&gt;CGA Shape&lt;/em&gt;, the generation of smaller complex geometric details is sometimes inefficient&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;CGA shape&lt;/em&gt; is a significant step forward that reduces modeling times by orders of magnitude.&lt;/li&gt;
+  &lt;li&gt;Existing commercial scripting tools to accelerate modeling processes can only replicate parts of &lt;em&gt;CGA shape&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;CGA shape&lt;/em&gt; models are significantly more detailed than modeling practices in the entertainment industry&lt;/li&gt;
+  &lt;li&gt;Despite &lt;em&gt;CGA shape’s&lt;/em&gt; strengths, generating smaller complex geometric details is sometimes inefficient&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;CGA shape&lt;/em&gt; drastically reduces modeling times.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&quot;efficiency-and-robustness&quot;&gt;Efficiency and robustness:&lt;/h3&gt;
@@ -142,21 +162,25 @@ This model retains the simplicity necessary for procedural modeling while allowi
 &lt;ul&gt;
   &lt;li&gt;Complex and error-prone geometric operations do not have to be executed&lt;/li&gt;
   &lt;li&gt;Good tradeoff between visual quality and speed&lt;/li&gt;
-  &lt;li&gt;Derivation of shape grammar reasonably fast (one billion polygon models can be generated in less than one day)&lt;/li&gt;
-  &lt;li&gt;Disadvantage - Procedural approach sometimes generates configurations of shapes that aren’t plausible (Future research - Shape grammars for shape understanding)&lt;/li&gt;
+  &lt;li&gt;Fast shape grammar derivation (one billion polygon models can be generated in less than one day)&lt;/li&gt;
+  &lt;li&gt;Disadvantage - Procedural approach might generate implausible shape configurations
+    &lt;ul&gt;
+      &lt;li&gt;Potential for future research - Shape grammars for shape understanding&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&quot;usability&quot;&gt;Usability:&lt;/h3&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Learning curve similar to other scripting languages&lt;/li&gt;
-  &lt;li&gt;Carelessly written rules can be very contrived and will only be understood by the original author and might produce unwanted side effects&lt;/li&gt;
-  &lt;li&gt;Modeling with CGA Shape is most naturally understood by people with a computer science background&lt;/li&gt;
+  &lt;li&gt;Learning curve similar to that of other scripting languages&lt;/li&gt;
+  &lt;li&gt;Carelessly written rules might produce unwanted side effects&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;CGA shape&lt;/em&gt; is most naturally understood by people with a background in Computer Science&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&quot;architecture-and-computer-graphics&quot;&gt;Architecture and computer graphics:&lt;/h3&gt;
 
-&lt;p&gt;Application to architectural design is yet to be explored and might require significant (e.g. adapting architectural concepts and deriving a set of specific rules)&lt;/p&gt;
+&lt;p&gt;Application to architectural design is yet to be explored and might require significant changes (e.g. adapting architectural concepts and deriving a set of specific rules)&lt;/p&gt;
 
 &lt;h3 id=&quot;comparison-to-l-systems&quot;&gt;Comparison to L-Systems:&lt;/h3&gt;
 
@@ -164,24 +188,36 @@ This model retains the simplicity necessary for procedural modeling while allowi
 
 &lt;ul&gt;
   &lt;li&gt;Notation of rules&lt;/li&gt;
-  &lt;li&gt;Idea of scope -&amp;gt; Evolution of L-System turtle&lt;/li&gt;
+  &lt;li&gt;The idea of scope corresponds to an evolution of the L-System turtle&lt;/li&gt;
   &lt;li&gt;Necessity of context sensitive rules&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h4 id=&quot;distinctions&quot;&gt;Distinctions:&lt;/h4&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Shapes, and rules replacing shapes with shapes instead of string replacement&lt;/li&gt;
+  &lt;li&gt;Shapes instead of strings&lt;/li&gt;
+  &lt;li&gt;Rules replacing shapes with shapes instead of string replacement&lt;/li&gt;
   &lt;li&gt;Shape rules non-existing in L-Systems&lt;/li&gt;
-  &lt;li&gt;L-Systems produces rules governing a biological system which do not directly relate to the modeling of buildings&lt;/li&gt;
+  &lt;li&gt;L-Systems are oriented towards biological systems which do not directly relate to the modeling of buildings&lt;/li&gt;
   &lt;li&gt;Direct application of L-Systems to architecture emphasizes the idea of growth (counterproductive for procedural modeling of buildings)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&quot;comparison-to-instant-architecture&quot;&gt;Comparison to instant architecture:&lt;/h3&gt;
-
 &lt;h3 id=&quot;real-time-rendering&quot;&gt;Real-time rendering:&lt;/h3&gt;
 &lt;ul&gt;
-  &lt;li&gt;Requires post-processing algorithms not yet developed (Challenge - Develop LOD techniques for massive city models)&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Lourenço Mourão</name></author><category term="Thesis" /><category term="Shape Grammars" /><category term="L-Systems" /><summary type="html">Disclaimer: This post serves as a mere summary for organizational purposes which will hopefully come in useful for the completion of my thesis’ report. I will carefully attempt to appropriately cite and quote the authors’ work so that their intellectual property is preserved. As a natural side effect of the paper’s publication date, the notion of time relative to that of grammatical conjugation within this overview might not old true to current standards. Details regarding technically heavy terminology and implementation are excluded from this overview and will be reserved for future analysis. Overview: The Müller, Pascal, et al “Procedural Modeling of Buildings” paper presents a shape grammar, CGA Shape, for the procedural modeling of building shells and highlights important benefits which the entertainment and architectural domain can benefit from, namely low cost production and efficient generation of massive urban models with a high level-of-detail. Additionally, it demonstrates solutions to previously unsolved modeling problems related to consistent mass modeling with volumetric shapes of arbitrary orientation and it is the first paper to address the aspect of volumetric mass modeling of buildings including the design of roofs. Challenges that motivated this paper: The authors identified a set of challenges that served as a motivational force to propose a solution: Modeling large 3D environments is both laborious and expensive Previous solutions were not able to generate sufficient geometric detail to buildings and were prone to unwanted intersections of architectural elements (Parish and Muller) (Show Fig. 2) Split rules are only sufficient for simple mass models, mass models can’t be easily changed, and objects of arbitrary orientation cannot be easily handled (Wonka et al) The derivation of shape grammars is intrinsically complex and usually done manually, or by computer, with a human deciding on the rules to apply Solution: Shape grammars can be simplified to set grammars to make them more amenable to computer implementation (Wonka et al) Major contributions: The Müller, Pascal, et al “Procedural Modeling of Buildings” paper constitute important contributions that are worth mentioning: A grammar-based solution, CGA Shape, which is an extension of set grammars introduced by Wonka et al capable of generating detailed building shells stemming from complex mass models A procedural approach to model detailed buildings with consistent mass models without being restricted to axis aligned shapes, including roof surfaces and rotated shapes Application related details in the context of procedural modeling of buildings - shape rules definition, concise notation, modeling strategies An overview of CGA Shape: On a general view, Müller, Pascal, et al’s CGA shape is powerful enough to specify complex shapes: Building mass models are constructed as a union of volumetric shapes Arbitrary rotations of shapes and cylinder inclusion in the shape vocabulary (show Fig. 6 as an example of rotations) Basic roof shapes inclusion - Gambrel, cone, gabled, hipped, cross-gable, mansard As a result, CGA Shape is able to generate buildings with high visual fidelity by employing production rules that obey the following iterative process: Create the building’s volumetric model (mass model) Construct its façade Add details for windows, doors, and ornaments This process constitutes a major benefit - the creation of an hierarchical structure that allows reusing production rules for procedural variations Mass model construction: The authors propose two possible ways to construct a mass model: Building lot as an axiom of the grammar Generate mass models via scaling, translation, rotation, and split operations while being careful not to protrude parcel boundaries Importing from GIS database or architectural model Tries to classify the imported model as basic shapes already defined in the shape vocabulary. If such an approach proves not to be possible, it uses general extruded footprint together with a general roof obtained by straight skeleton computation Problem: Restrictive when it comes to modifications in the mass model (if any) Façade construction: With regards to directly computing visible façade surfaces, the authors enumerate the following problems (show Fig. 8): Visible surfaces can be general polygons (not necessarily trivial to compute) It is not clear how to write meaningful shape rules for general polygons There is no simple mechanism to assign non-terminal symbols for the façade grammar, because these are mainly outputs of algorithms and not of production rules As such, in order to overcome the aforementioned challenges, the authors proposed the following modeling strategy: Generate two-dimensional scopes aligned with façade surfaces and roof surfaces by extracting the faces of the 3D shapes with a component split Correctly aligned and parametrized resulting 2D scopes Extract edges by generating 1D scopes This works for arbitrarily aligned polygons such as roof surfaces and façade surfaces typically aligned with the up axis in the world coordinate system Resulting quads and triangles are then refined After a shape is reduced to 2D it is often replaced by 3D through subsequent rule applications Solution to consistent design: - Testing spatial overlap (occlusion) - Testing nearby important lines and planes in the shape configuration (snap lines) This model retains the simplicity necessary for procedural modeling while allowing to work many configurations of mass models. Occlusion Occlusion queries that test for intersections between shapes (no occlusion, partial occlusion, full occlusion) Simplest query can check if a selected shape is occluded by any other shape There are several variations to query subsets of a shape’s configuration Occlusion against all shapes (even inactive ones) Occlusion against shapes with a specific label Occlusion against all shapes except the selected shape’s predecessors Type of intersection computation can also be modified to include distance for analyzing occlusions when enlarging a model Snapping Occlusion makes it possible to avoid placing façade elements on the intersection of volumetric shapes constituting the mass model, but the structure of the façade’s layout can further be improved Improvement - Alter existing shape rules to snap to a dominant face or line (snap shapes) in the shape configuration These operations will be performed in 2D faces of the volumetric shapes Snap lines work for repeat split and subdivision split: Repeat: - Snap lines divide the scope into different parts and the repeat rule is invoked for each part separately Subdivision: - Snap line just alters the closest split and leaves everything else unmodified Discussion: Comparison to mesh modeling tools: Existing commercial scripting to accelerate modeling processes can only replicate parts of CGA Shape CGA Shape models are significantly more detailed than modeling practices in the entertainment industry While the global structure, the positioning of individual shapes, level-of-detail control, and the data handling of large models is a strength of CGA Shape, the generation of smaller complex geometric details is sometimes inefficient CGA shape is a significant step forward that reduces modeling times by orders of magnitude. Efficiency and robustness: Complex and error-prone geometric operations do not have to be executed Good tradeoff between visual quality and speed Derivation of shape grammar reasonably fast (one billion polygon models can be generated in less than one day) Disadvantage - Procedural approach sometimes generates configurations of shapes that aren’t plausible (Future research - Shape grammars for shape understanding) Usability: Learning curve similar to other scripting languages Carelessly written rules can be very contrived and will only be understood by the original author and might produce unwanted side effects Modeling with CGA Shape is most naturally understood by people with a computer science background Architecture and computer graphics: Application to architectural design is yet to be explored and might require significant (e.g. adapting architectural concepts and deriving a set of specific rules) Comparison to L-Systems: Similarities: Notation of rules Idea of scope -&amp;gt; Evolution of L-System turtle Necessity of context sensitive rules Distinctions: Shapes, and rules replacing shapes with shapes instead of string replacement Shape rules non-existing in L-Systems L-Systems produces rules governing a biological system which do not directly relate to the modeling of buildings Direct application of L-Systems to architecture emphasizes the idea of growth (counterproductive for procedural modeling of buildings) Comparison to instant architecture: Real-time rendering: Requires post-processing algorithms not yet developed (Challenge - Develop LOD techniques for massive city models)</summary></entry><entry><title type="html">A brief introduction to my thesis: Procedural Modeling of Architectonic Shapes</title><link href="http://localhost:4000/thesis/thesis-intro/" rel="alternate" type="text/html" title="A brief introduction to my thesis: Procedural Modeling of Architectonic Shapes" /><published>2022-10-30T00:00:00+01:00</published><updated>2022-10-30T00:00:00+01:00</updated><id>http://localhost:4000/thesis/thesis-intro</id><content type="html" xml:base="http://localhost:4000/thesis/thesis-intro/">&lt;p&gt;My thesis aims at exploring and applying procedural modeling techniques for modeling both structural and ornamental assets inherent to that of the architectural domain.&lt;/p&gt;
+  &lt;li&gt;Requires post-processing algorithms not yet developed
+    &lt;ul&gt;
+      &lt;li&gt;This poses an interesting challenge - develop LOD techniques for massive city models&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;references&quot;&gt;References:&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Müller, P., Wonka, P., Haegler, S., Ulmer, A., &amp;amp; Van Gool, L. (2006). Procedural modeling of buildings. In ACM SIGGRAPH 2006 Papers (pp. 614-623).&lt;/em&gt;&lt;/p&gt;</content><author><name>Lourenço Mourão</name></author><category term="Thesis" /><category term="Shape Grammars" /><category term="L-Systems" /><summary type="html">Disclaimer: This post serves as a mere summary of the aforementioned research paper for organizational purposes which will hopefully come in useful for the completion of my thesis’ report. I will carefully attempt to appropriately cite and quote the authors’ work so that their intellectual property is preserved. As a natural side effect of the paper’s publication date, the notion of time relative to that of grammatical conjugation within this overview might not old true to current standards. Details regarding technically heavy terminology and implementation are excluded from this overview and will be reserved for future analysis. Personal comments of my authorship (if any) with regards to the research paper in question will be clearly delimited from the overview in the ‘Comments and more’ section Overview: The Müller, P. et al (2006) “Procedural Modeling of Buildings” paper presents a shape grammar, CGA shape, for the procedural modeling of buildings and demonstrates solutions to previously unsolved problems constituting important benefits to both the entertainment and architectural domain, namely low cost production and efficient generation of massive urban models with a high level-of-detail (LOD). Challenges that motivated this paper: Müller, P. et al (2006) identified a set of challenges that served as a motivational force to propose a solution: Modeling large 3D environments is both laborious and expensive Previous solutions (Parish and Muller (2001)) were not able to generate sufficient geometric detail to buildings and were prone to unwanted intersections of architectural elements Split rules (Wonka et al (2003)) are only sufficient for simple mass models, mass models can’t be easily changed, and objects of arbitrary orientation cannot be easily handled Deriving shape grammars is extremely complex and either done manually, or by computer, with external human help Solution: Simplifying shape grammars to set grammars to facilitate computer implementation (Wonka et al (2003)) Major contributions: The Müller, P. et al (2006). “Procedural Modeling of Buildings” paper constitutes important contributions: CGA shape - An extension of set grammars introduced by Wonka et al (2003) A procedural approach to model highly detailed buildings with consistent mass models without being restricted to axis aligned shapes while, at the same time, including roof surfaces and rotated shapes Application related details in the context of procedural modeling of buildings - shape rules definition, concise notation, modeling strategies An overview of CGA shape: On a general view, Müller, P. et al (2006) proposal is powerful enough to specify complex shapes: Building mass models are constructed as a union of volumetric shapes and a combination of operations - scaling, translation, splits Arbitrary rotations of shapes Cylinder inclusion in the shape vocabulary Inclusion of basic roof shapes - Gambrel, cone, gabled, hipped, cross-gable, mansard According to Müller, P. et al (2006), shape formulation via CGA shape follows the below-mentioned principles: Representation of shapes via: Symbol (string) - Terminal/ Non-terminal symbols Geometric and numeric attributes - Positional vectors, cartesian vectors, and size that, together, comprise an oriented bounding box (scope) Shape replacement via production rules As a result, CGA shape is able to generate buildings with high visual fidelity by employing production rules that obey the following iterative process: Create the building’s volumetric model (mass model) Construct its façade Add details for windows, doors, and ornaments As referred by Müller, P. et al (2006), this process constitutes a major benefit - the creation of an hierarchical structure that allows reusing production rules for procedural variations Mass model construction: Müller, P. et al (2006) propose two possible ways to construct a mass model: Building lot as an axiom of the grammar Generate mass models via scaling, translation, rotation, and split operations while being careful not to protrude parcel boundaries Importing from GIS database or architectural model Attempt at classifying the imported model as basic shapes already defined in the shape vocabulary. If such an approach proves impossible, it uses general extruded footprint together with a general roof obtained by straight skeleton computation Problem: Restrictive when it comes to modifications in the mass model Façade construction: With regards to directly computing visible façade surfaces, Müller, P. et al (2006) enumerate the following problems: Visible surfaces can be general polygons (not necessarily trivial to compute) Writing meaningful shape rules for general polygons is not straightforward Assigning non-terminal symbols for the façade grammar is not trivial (mainly outputs of algorithms and not of production rules) As such, in order to overcome the aforementioned challenges, Müller, P. et al (2006) propose a modeling strategy that works for arbitrarily aligned polygons: 2D scopes generation aligned with façade and roof surfaces by extracting the faces of 3D shapes with a component split This keeps the resulting 2D faces correctly aligned and parametrized Similarly, edge extraction can be performed by generating 1D scopes Refinement of resulting quads and triangles through the grammar As mentioned by Müller, P. et al (2006), this model allows to work on many configurations of mass models, while retaining the necessary simplicity for procedural modeling. Additionally, Müller, P. et al (2006) mention that after a shape is reduced to 2D, it is often replaced by 3D through subsequent rule application. As such, for the sake of consistency, they propose two solutions: Testing spatial overlap (occlusion) Testing nearby important lines and planes in the shape configuration (snap lines) Occlusion Müller, P. et al (2006) propose a solution to avoid placing façade elements on the intersection of the mass model’s volumetric shapes by employing the following mechanisms: Occlusion queries that test for intersections between shapes No occlusion Partial occlusion Full occlusion There are several variations to query subsets of a shape’s configuration Occlusion against all shapes (even inactive ones) Occlusion against shapes with a specific label Occlusion against all shapes except the selected shape’s predecessors The intersection type can also include distance for analyzing occlusions when enlarging a model Snapping To further improve the layout of the façade’s structure, Müller, P. et al (2006) propose a mechanism to be performed in 2D faces of volumetric shapes, as detailed below: Alter existing shape rules to snap to a dominant face or line in the shape configuration (snap shapes) There are two types of splits that snap lines can be applied to: Repeat split: Scope division and repeat rule invocation to each divided part via snap lines Subdivision split: The closest split is altered via snap lines (everything else is kept unchanged) Discussion: Müller, P. et al (2006) also enumerate relevant advantages, disadvantages, and differences of CGA shape when compared to other solutions, such as: Comparison to mesh modeling tools: Existing commercial scripting tools to accelerate modeling processes can only replicate parts of CGA shape CGA shape models are significantly more detailed than modeling practices in the entertainment industry Despite CGA shape’s strengths, generating smaller complex geometric details is sometimes inefficient CGA shape drastically reduces modeling times. Efficiency and robustness: Complex and error-prone geometric operations do not have to be executed Good tradeoff between visual quality and speed Fast shape grammar derivation (one billion polygon models can be generated in less than one day) Disadvantage - Procedural approach might generate implausible shape configurations Potential for future research - Shape grammars for shape understanding Usability: Learning curve similar to that of other scripting languages Carelessly written rules might produce unwanted side effects CGA shape is most naturally understood by people with a background in Computer Science Architecture and computer graphics: Application to architectural design is yet to be explored and might require significant changes (e.g. adapting architectural concepts and deriving a set of specific rules) Comparison to L-Systems: Similarities: Notation of rules The idea of scope corresponds to an evolution of the L-System turtle Necessity of context sensitive rules Distinctions: Shapes instead of strings Rules replacing shapes with shapes instead of string replacement Shape rules non-existing in L-Systems L-Systems are oriented towards biological systems which do not directly relate to the modeling of buildings Direct application of L-Systems to architecture emphasizes the idea of growth (counterproductive for procedural modeling of buildings) Real-time rendering: Requires post-processing algorithms not yet developed This poses an interesting challenge - develop LOD techniques for massive city models References: Müller, P., Wonka, P., Haegler, S., Ulmer, A., &amp;amp; Van Gool, L. (2006). Procedural modeling of buildings. In ACM SIGGRAPH 2006 Papers (pp. 614-623).</summary></entry><entry><title type="html">An intro to my blog</title><link href="http://localhost:4000/blog-intro/" rel="alternate" type="text/html" title="An intro to my blog" /><published>2022-10-30T00:00:00+01:00</published><updated>2022-10-30T00:00:00+01:00</updated><id>http://localhost:4000/blog-intro</id><content type="html" xml:base="http://localhost:4000/blog-intro/">&lt;p&gt;This blog will serve as a simple portfolio where I will be showcasing projects that I’m working and have worked on, be it of academic, professional or spontaneous nature.&lt;/p&gt;
+
+&lt;p&gt;Additionally, it will serve as an aiding tool to organize my thoughts for researching purposes - from summarizing papers pertaining to my investigational scope, to creating a taxonomic overview of research materials that I will come across with.&lt;/p&gt;
+
+&lt;p&gt;I hope you enjoy my journey through the fascinating world that Computer Science has to offer!&lt;/p&gt;
+
+&lt;p&gt;How marvelous it is to explore, in awe, the generous contributions that researchers have brought to the advancement of humanity, and how wonderful would it be to contribute to that cause…&lt;/p&gt;</content><author><name>Lourenço Mourão</name></author><summary type="html">This blog will serve as a simple portfolio where I will be showcasing projects that I’m working and have worked on, be it of academic, professional or spontaneous nature.</summary></entry><entry><title type="html">A brief introduction to my thesis: Procedural Modeling of Architectonic Shapes</title><link href="http://localhost:4000/thesis/thesis-intro/" rel="alternate" type="text/html" title="A brief introduction to my thesis: Procedural Modeling of Architectonic Shapes" /><published>2022-10-30T00:00:00+01:00</published><updated>2022-10-30T00:00:00+01:00</updated><id>http://localhost:4000/thesis/thesis-intro</id><content type="html" xml:base="http://localhost:4000/thesis/thesis-intro/">&lt;p&gt;My thesis aims at exploring and applying procedural modeling techniques for modeling both structural and ornamental assets inherent to that of the architectural domain.&lt;/p&gt;
 
 &lt;p&gt;Additionally, my thesis will also present a reflection concerning already existing solutions for procedural modeling techniques applied to architecture - their benefits and limitations - as well as its already proven potential as an indispensable tool for architects during an era where technological integration is of the essence - especially for the optimization and exploration of countless combinatorial variations pertaining to a determined set of outputs, otherwise unfeasible to inexpensively achieve by hand in a timely manner.&lt;/p&gt;</content><author><name>Lourenço Mourão</name></author><category term="Thesis" /><summary type="html">My thesis aims at exploring and applying procedural modeling techniques for modeling both structural and ornamental assets inherent to that of the architectural domain.</summary></entry></feed>

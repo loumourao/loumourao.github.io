@@ -3,6 +3,7 @@ title: "An overview of Müller, P. et al (2006) 'Procedural modeling of building
 categories:
     - Thesis
 tags:
+    - Procedural Modeling
     - Shape Grammars
     - L-Systems
 ---

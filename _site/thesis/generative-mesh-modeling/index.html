@@ -1,0 +1,664 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>An overview of Havemann, Sven, and Dieter W. Fellner. (2005) ‘Generative mesh modeling’ - Lourenço’s Blog</title>
+<meta name="description" content="Disclaimer:     This post serves as a mere summary of the aforementioned research paper for organizational purposes which will hopefully come in useful for the completion of my thesis’ report.   I will carefully attempt to appropriately cite and quote the authors’ work so that their intellectual property is preserved.   As a natural side effect of the paper’s publication date, the notion of time relative to that of grammatical conjugation within this overview might not old true to current standards.   Details regarding technically heavy terminology and implementation are excluded from this overview and will be reserved for future analysis.   Personal comments of my authorship (if any) with regards to the research paper in question will be clearly delimited from the overview in the ‘Comments and more’ section   Overview:  The Havemann, Sven, and Dieter W. Fellner (2005) ‘Generative mesh modeling’ paper introduces a 3D modeling language - Generative Mesh Modeling (GML) - that aims at representing 3D shapes in such a way that effectively solves some of the disadvantages associated to common 3D modeling practices. As such, GML’s approach to tackle these challenges is structured upon the notion of representing 3D shapes by the means of functions, and corresponding parameters, instead of geometric primitives/ polygon count. Consequently, the evaluation of a well-defined function and/ or group of functions results in the visual representation of the desired 3D shape. Moreover, GML has the potential of separating a model’s geometric features (content) from ornamental aspects (presentation) (e.g., if given a building’s window, we must be able to change its architectural style with ease by merely focusing on its ornamental aspect)  In addition to its main feature, GML can represent a myriad of concepts:    Modeling history   Separation of data and operations   Semantic level-of-detail   Event-driven animations   Data-flow networks   Challenges that motivated this paper:  Havemann, Sven, and Dieter W. Fellner (2005) enumerated several disadvantages associated to 3D modeling via geometric primitives:  Modeling bottleneck:    High cost associated to 3D modeling   Lack of automation in 3D modeling   Difficulty in changing the 3D model’s basic early stage shapes in late modeling periods   Taking into account the last problem, Havemann, Sven, and Dieter W. Fellner (2005) mention forward modeling as a possible alternative. However, the authors point out the unsustainable nature of such a solution due to the limited changeability and limited reusability that it brings to 3D models.  Model file sizes:    The size of 3D models depends on their representation model   For that matter, Havemann, Sven, and Dieter W. Fellner (2005) recognize the potential of progressive meshes to effectively reduce a 3D model’s file size. Nevertheless, the authors enumerate significant problems still remaining:    The complexity of the progressive mesh is still in the order of the input mesh   Post-processing mechanisms result in the loss of modeling history   Simplification schemes are insensitive to the structure of 3D models   Digital libraries for 3D models:    The efficiency of a digital library is highly dependent of the representation formats of the models it stores   Static virtual worlds:    The static nature of most virtual worlds and 3D applications inhibiting the possibility of modifying a model’s mesh   An overview of GML:  Given the aforementioned challenges and despite GML’s possibility of representing 3D models via triangle meshes, GML encourages following and prioritizes the information reduction paradigm - only the essential information required for 3D model representation is stored - which makes the visual representation of 3D models dependent on its on-demand generation via a runtime engine, drastically reducing their corresponding file size. Additionally, due to modeling operations residing in a function’s definition, complex shapes can be achieved by the composition of simple modeling operations.  With the above-mentioned factors taken into consideration, Havemann, Sven, and Dieter W. Fellner (2005) structure their proposal on the following principles/ techniques:    Catmull/ Clark subdivision surfaces   Boundary representation meshes (BRep)   Euler operations   Stack-based programming language   Combined BRep Meshes (CBRep): Shape representation relies on CBReps and its mesh can be manipulated at runtime through Euler operators. Additionally, this form of representation has a number of benefits when compared to solely using triangular meshes, namely a higher degree of abstraction.  Euler Operators: Euler operators allow for the modification of a shape’s mesh by changing both its connectivity and geometry. As such, to support the modeling of any orientable manifold mesh, there are 5 possible operations followed by their inverses, comprising 10 operations in total. It is worth noting that, for each operation, V is short for Vertex, E for Edge, F for Face, S for Shell, R for Ring, and H for Hole. The operators are:    makeVEFS - creates a new connected component consisting of two vertices connected via a pair of half-edges - and its inverse killVEFS   makeEV - creates an edge and a vertex - and its inverse killEV   makeEF - splits a face by making an edge between two of its vertices - and its inverse killEF   killEmakeR - creates a ring from an edge - and its inverse makeEkillR   killFmakeRH - turns a smaller face into a ring of the bigger face - and its inverse makeFkillRH   Euler Macros: Havemann, Sven, and Dieter W. Fellner (2005) propose a logging mechanism to easily undo and redo operations on a model’s mesh. This mechanism is responsible for storing Euler operations which when grouped together are termed as Euler macros. As such, to undo a set of Euler operations on a model’s mesh, the Euler macro associated to that very set is traversed back to front with its corresponding inverse operators being executed. Moreover, it is worth noting Euler macros are stored within a macro graph, given that there is a dependency between Euler macros, more specifically - if a given operator within a macro received an input value produced by another macro, the latter macro is considered to be the parent of the former macro. As such, if one desires to undo a parent macro, the child macro must be undone first - the inverse applies for a redo operation.  GML and operator libraries: GML is based upon Adobe’s Postscript language and, in order to appropriately execute the necessary 3D modeling operations, it makes use of a set of operations conveniently organized in C++ libraries:    Core - Basic Postscript operations   Geometry - Vector algebra operations and additional operations for computing distances and projections   CBRep - Functionalities pertaining to Euler operators and Euler macros   Modeling - High-level modeling operations (extrude, polygon/ face conversions, among others)   Interaction - Input handling and visual display   Comments and more:  Havemann, Sven, and Dieter W. Fellner (2005) propose an interesting and powerful approach for procedural modeling that targets the interactive aspects of 3D modeling - an extremely important aspect for CAD that has the potential to allow architects to explore different architectural designs to a great extent, stemming from a base structural model. However, its implementation based on Adobe’s Postscript language seems rather convoluted and could be further simplified.  References:  Havemann, S., &amp; Fellner, D. W. (2005). Generative mesh modeling.">
+
+
+  <meta name="author" content="Lourenço Mourão">
+  
+  <meta property="article:author" content="Lourenço Mourão">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Lourenço's Blog">
+<meta property="og:title" content="An overview of Havemann, Sven, and Dieter W. Fellner. (2005) ‘Generative mesh modeling’">
+<meta property="og:url" content="http://localhost:4000/thesis/generative-mesh-modeling/">
+
+
+  <meta property="og:description" content="Disclaimer:     This post serves as a mere summary of the aforementioned research paper for organizational purposes which will hopefully come in useful for the completion of my thesis’ report.   I will carefully attempt to appropriately cite and quote the authors’ work so that their intellectual property is preserved.   As a natural side effect of the paper’s publication date, the notion of time relative to that of grammatical conjugation within this overview might not old true to current standards.   Details regarding technically heavy terminology and implementation are excluded from this overview and will be reserved for future analysis.   Personal comments of my authorship (if any) with regards to the research paper in question will be clearly delimited from the overview in the ‘Comments and more’ section   Overview:  The Havemann, Sven, and Dieter W. Fellner (2005) ‘Generative mesh modeling’ paper introduces a 3D modeling language - Generative Mesh Modeling (GML) - that aims at representing 3D shapes in such a way that effectively solves some of the disadvantages associated to common 3D modeling practices. As such, GML’s approach to tackle these challenges is structured upon the notion of representing 3D shapes by the means of functions, and corresponding parameters, instead of geometric primitives/ polygon count. Consequently, the evaluation of a well-defined function and/ or group of functions results in the visual representation of the desired 3D shape. Moreover, GML has the potential of separating a model’s geometric features (content) from ornamental aspects (presentation) (e.g., if given a building’s window, we must be able to change its architectural style with ease by merely focusing on its ornamental aspect)  In addition to its main feature, GML can represent a myriad of concepts:    Modeling history   Separation of data and operations   Semantic level-of-detail   Event-driven animations   Data-flow networks   Challenges that motivated this paper:  Havemann, Sven, and Dieter W. Fellner (2005) enumerated several disadvantages associated to 3D modeling via geometric primitives:  Modeling bottleneck:    High cost associated to 3D modeling   Lack of automation in 3D modeling   Difficulty in changing the 3D model’s basic early stage shapes in late modeling periods   Taking into account the last problem, Havemann, Sven, and Dieter W. Fellner (2005) mention forward modeling as a possible alternative. However, the authors point out the unsustainable nature of such a solution due to the limited changeability and limited reusability that it brings to 3D models.  Model file sizes:    The size of 3D models depends on their representation model   For that matter, Havemann, Sven, and Dieter W. Fellner (2005) recognize the potential of progressive meshes to effectively reduce a 3D model’s file size. Nevertheless, the authors enumerate significant problems still remaining:    The complexity of the progressive mesh is still in the order of the input mesh   Post-processing mechanisms result in the loss of modeling history   Simplification schemes are insensitive to the structure of 3D models   Digital libraries for 3D models:    The efficiency of a digital library is highly dependent of the representation formats of the models it stores   Static virtual worlds:    The static nature of most virtual worlds and 3D applications inhibiting the possibility of modifying a model’s mesh   An overview of GML:  Given the aforementioned challenges and despite GML’s possibility of representing 3D models via triangle meshes, GML encourages following and prioritizes the information reduction paradigm - only the essential information required for 3D model representation is stored - which makes the visual representation of 3D models dependent on its on-demand generation via a runtime engine, drastically reducing their corresponding file size. Additionally, due to modeling operations residing in a function’s definition, complex shapes can be achieved by the composition of simple modeling operations.  With the above-mentioned factors taken into consideration, Havemann, Sven, and Dieter W. Fellner (2005) structure their proposal on the following principles/ techniques:    Catmull/ Clark subdivision surfaces   Boundary representation meshes (BRep)   Euler operations   Stack-based programming language   Combined BRep Meshes (CBRep): Shape representation relies on CBReps and its mesh can be manipulated at runtime through Euler operators. Additionally, this form of representation has a number of benefits when compared to solely using triangular meshes, namely a higher degree of abstraction.  Euler Operators: Euler operators allow for the modification of a shape’s mesh by changing both its connectivity and geometry. As such, to support the modeling of any orientable manifold mesh, there are 5 possible operations followed by their inverses, comprising 10 operations in total. It is worth noting that, for each operation, V is short for Vertex, E for Edge, F for Face, S for Shell, R for Ring, and H for Hole. The operators are:    makeVEFS - creates a new connected component consisting of two vertices connected via a pair of half-edges - and its inverse killVEFS   makeEV - creates an edge and a vertex - and its inverse killEV   makeEF - splits a face by making an edge between two of its vertices - and its inverse killEF   killEmakeR - creates a ring from an edge - and its inverse makeEkillR   killFmakeRH - turns a smaller face into a ring of the bigger face - and its inverse makeFkillRH   Euler Macros: Havemann, Sven, and Dieter W. Fellner (2005) propose a logging mechanism to easily undo and redo operations on a model’s mesh. This mechanism is responsible for storing Euler operations which when grouped together are termed as Euler macros. As such, to undo a set of Euler operations on a model’s mesh, the Euler macro associated to that very set is traversed back to front with its corresponding inverse operators being executed. Moreover, it is worth noting Euler macros are stored within a macro graph, given that there is a dependency between Euler macros, more specifically - if a given operator within a macro received an input value produced by another macro, the latter macro is considered to be the parent of the former macro. As such, if one desires to undo a parent macro, the child macro must be undone first - the inverse applies for a redo operation.  GML and operator libraries: GML is based upon Adobe’s Postscript language and, in order to appropriately execute the necessary 3D modeling operations, it makes use of a set of operations conveniently organized in C++ libraries:    Core - Basic Postscript operations   Geometry - Vector algebra operations and additional operations for computing distances and projections   CBRep - Functionalities pertaining to Euler operators and Euler macros   Modeling - High-level modeling operations (extrude, polygon/ face conversions, among others)   Interaction - Input handling and visual display   Comments and more:  Havemann, Sven, and Dieter W. Fellner (2005) propose an interesting and powerful approach for procedural modeling that targets the interactive aspects of 3D modeling - an extremely important aspect for CAD that has the potential to allow architects to explore different architectural designs to a great extent, stemming from a base structural model. However, its implementation based on Adobe’s Postscript language seems rather convoluted and could be further simplified.  References:  Havemann, S., &amp; Fellner, D. W. (2005). Generative mesh modeling.">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2022-11-06T00:00:00+00:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/thesis/generative-mesh-modeling/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Lourenço Mourão",
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Lourenço's Blog Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single wide">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Lourenço's Blog
+          
+        </a>
+        <ul class="visible-links"></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+    <div class="author__avatar">
+      <a href="http://localhost:4000/">
+        <img src="/assets/images/blog_avatar.png" alt="Lourenço Mourão" itemprop="image" class="u-photo">
+      </a>
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="http://localhost:4000/" itemprop="url">Lourenço Mourão</a>
+    </h3>
+    
+      <div class="author__bio p-note" itemprop="description">
+        <p>MSc. Computer Science and Engineering @ Instituto Superior Técnico</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name" class="p-locality">Lisbon, Portugal</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="mailto:lourenco.mourao@protonmail.com" rel="nofollow noopener noreferrer me"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span></a></li>
+          
+        
+          
+            <li><a href="https://github.com/loumourao" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="An overview of Havemann, Sven, and Dieter W. Fellner. (2005) ‘Generative mesh modeling’">
+    <meta itemprop="description" content="Disclaimer:  This post serves as a mere summary of the aforementioned research paper for organizational purposes which will hopefully come in useful for the completion of my thesis’ report.  I will carefully attempt to appropriately cite and quote the authors’ work so that their intellectual property is preserved.  As a natural side effect of the paper’s publication date, the notion of time relative to that of grammatical conjugation within this overview might not old true to current standards.  Details regarding technically heavy terminology and implementation are excluded from this overview and will be reserved for future analysis.  Personal comments of my authorship (if any) with regards to the research paper in question will be clearly delimited from the overview in the ‘Comments and more’ sectionOverview:The Havemann, Sven, and Dieter W. Fellner (2005) ‘Generative mesh modeling’ paper introduces a 3D modeling language - Generative Mesh Modeling (GML) - that aims at representing 3D shapes in such a way that effectively solves some of the disadvantages associated to common 3D modeling practices. As such, GML’s approach to tackle these challenges is structured upon the notion of representing 3D shapes by the means of functions, and corresponding parameters, instead of geometric primitives/ polygon count. Consequently, the evaluation of a well-defined function and/ or group of functions results in the visual representation of the desired 3D shape. Moreover, GML has the potential of separating a model’s geometric features (content) from ornamental aspects (presentation) (e.g., if given a building’s window, we must be able to change its architectural style with ease by merely focusing on its ornamental aspect)In addition to its main feature, GML can represent a myriad of concepts:  Modeling history  Separation of data and operations  Semantic level-of-detail  Event-driven animations  Data-flow networksChallenges that motivated this paper:Havemann, Sven, and Dieter W. Fellner (2005) enumerated several disadvantages associated to 3D modeling via geometric primitives:Modeling bottleneck:  High cost associated to 3D modeling  Lack of automation in 3D modeling  Difficulty in changing the 3D model’s basic early stage shapes in late modeling periodsTaking into account the last problem, Havemann, Sven, and Dieter W. Fellner (2005) mention forward modeling as a possible alternative. However, the authors point out the unsustainable nature of such a solution due to the limited changeability and limited reusability that it brings to 3D models.Model file sizes:  The size of 3D models depends on their representation modelFor that matter, Havemann, Sven, and Dieter W. Fellner (2005) recognize the potential of progressive meshes to effectively reduce a 3D model’s file size. Nevertheless, the authors enumerate significant problems still remaining:  The complexity of the progressive mesh is still in the order of the input mesh  Post-processing mechanisms result in the loss of modeling history  Simplification schemes are insensitive to the structure of 3D modelsDigital libraries for 3D models:  The efficiency of a digital library is highly dependent of the representation formats of the models it storesStatic virtual worlds:  The static nature of most virtual worlds and 3D applications inhibiting the possibility of modifying a model’s meshAn overview of GML:Given the aforementioned challenges and despite GML’s possibility of representing 3D models via triangle meshes, GML encourages following and prioritizes the information reduction paradigm - only the essential information required for 3D model representation is stored - which makes the visual representation of 3D models dependent on its on-demand generation via a runtime engine, drastically reducing their corresponding file size. Additionally, due to modeling operations residing in a function’s definition, complex shapes can be achieved by the composition of simple modeling operations.With the above-mentioned factors taken into consideration, Havemann, Sven, and Dieter W. Fellner (2005) structure their proposal on the following principles/ techniques:  Catmull/ Clark subdivision surfaces  Boundary representation meshes (BRep)  Euler operations  Stack-based programming languageCombined BRep Meshes (CBRep):Shape representation relies on CBReps and its mesh can be manipulated at runtime through Euler operators. Additionally, this form of representation has a number of benefits when compared to solely using triangular meshes, namely a higher degree of abstraction.Euler Operators:Euler operators allow for the modification of a shape’s mesh by changing both its connectivity and geometry. As such, to support the modeling of any orientable manifold mesh, there are 5 possible operations followed by their inverses, comprising 10 operations in total. It is worth noting that, for each operation, V is short for Vertex, E for Edge, F for Face, S for Shell, R for Ring, and H for Hole. The operators are:  makeVEFS - creates a new connected component consisting of two vertices connected via a pair of half-edges - and its inverse killVEFS  makeEV - creates an edge and a vertex - and its inverse killEV  makeEF - splits a face by making an edge between two of its vertices - and its inverse killEF  killEmakeR - creates a ring from an edge - and its inverse makeEkillR  killFmakeRH - turns a smaller face into a ring of the bigger face - and its inverse makeFkillRHEuler Macros:Havemann, Sven, and Dieter W. Fellner (2005) propose a logging mechanism to easily undo and redo operations on a model’s mesh. This mechanism is responsible for storing Euler operations which when grouped together are termed as Euler macros. As such, to undo a set of Euler operations on a model’s mesh, the Euler macro associated to that very set is traversed back to front with its corresponding inverse operators being executed. Moreover, it is worth noting Euler macros are stored within a macro graph, given that there is a dependency between Euler macros, more specifically - if a given operator within a macro received an input value produced by another macro, the latter macro is considered to be the parent of the former macro. As such, if one desires to undo a parent macro, the child macro must be undone first - the inverse applies for a redo operation.GML and operator libraries:GML is based upon Adobe’s Postscript language and, in order to appropriately execute the necessary 3D modeling operations, it makes use of a set of operations conveniently organized in C++ libraries:  Core - Basic Postscript operations  Geometry - Vector algebra operations and additional operations for computing distances and projections  CBRep - Functionalities pertaining to Euler operators and Euler macros  Modeling - High-level modeling operations (extrude, polygon/ face conversions, among others)  Interaction - Input handling and visual displayComments and more:Havemann, Sven, and Dieter W. Fellner (2005) propose an interesting and powerful approach for procedural modeling that targets the interactive aspects of 3D modeling - an extremely important aspect for CAD that has the potential to allow architects to explore different architectural designs to a great extent, stemming from a base structural model. However, its implementation based on Adobe’s Postscript language seems rather convoluted and could be further simplified.References:Havemann, S., &amp; Fellner, D. W. (2005). Generative mesh modeling.">
+    <meta itemprop="datePublished" content="2022-11-06T00:00:00+00:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="http://localhost:4000/thesis/generative-mesh-modeling/" class="u-url" itemprop="url">An overview of Havemann, Sven, and Dieter W. Fellner. (2005) ‘Generative mesh modeling’
+</a>
+          </h1>
+          
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2022-11-06T00:00:00+00:00">November 6, 2022</time>
+      </span>
+    
+
+    <span class="page__meta-sep"></span>
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          5 minute read
+        
+      </span>
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+        <h2 id="disclaimer">Disclaimer:</h2>
+
+<ul>
+  <li>This post serves as a mere summary of the aforementioned research paper for organizational purposes which will hopefully come in useful for the completion of my thesis’ report.</li>
+  <li>I will carefully attempt to appropriately cite and quote the authors’ work so that their intellectual property is preserved.</li>
+  <li>As a natural side effect of the paper’s publication date, the notion of time relative to that of grammatical conjugation within this overview might not old true to current standards.</li>
+  <li>Details regarding technically heavy terminology and implementation are excluded from this overview and will be reserved for future analysis.</li>
+  <li>Personal comments of my authorship (if any) with regards to the research paper in question will be clearly delimited from the overview in the <strong>‘Comments and more’</strong> section</li>
+</ul>
+
+<h2 id="overview">Overview:</h2>
+
+<p>The <em>Havemann, Sven, and Dieter W. Fellner (2005) ‘Generative mesh modeling’</em> paper introduces a 3D modeling language - <em>Generative Mesh Modeling (GML)</em> - that aims at representing 3D shapes in such a way that effectively solves some of the disadvantages associated to common 3D modeling practices. As such, <em>GML’s</em> approach to tackle these challenges is structured upon the notion of representing 3D shapes by the means of functions, and corresponding parameters, instead of geometric primitives/ polygon count. Consequently, the evaluation of a well-defined function and/ or group of functions results in the visual representation of the desired 3D shape. Moreover, <em>GML</em> has the potential of separating a model’s geometric features (<em>content</em>) from ornamental aspects (<em>presentation</em>) (e.g., if given a building’s window, we must be able to change its architectural style with ease by merely focusing on its ornamental aspect)</p>
+
+<p>In addition to its main feature, <em>GML</em> can represent a myriad of concepts:</p>
+<ul>
+  <li>Modeling history</li>
+  <li>Separation of data and operations</li>
+  <li>Semantic level-of-detail</li>
+  <li>Event-driven animations</li>
+  <li>Data-flow networks</li>
+</ul>
+
+<h2 id="challenges-that-motivated-this-paper">Challenges that motivated this paper:</h2>
+
+<p><em>Havemann, Sven, and Dieter W. Fellner (2005)</em> enumerated several disadvantages associated to 3D modeling via geometric primitives:</p>
+
+<p><strong>Modeling bottleneck:</strong></p>
+<ul>
+  <li>High cost associated to 3D modeling</li>
+  <li>Lack of automation in 3D modeling</li>
+  <li>Difficulty in changing the 3D model’s basic early stage shapes in late modeling periods</li>
+</ul>
+
+<p>Taking into account the last problem, <em>Havemann, Sven, and Dieter W. Fellner (2005)</em> mention <em>forward modeling</em> as a possible alternative. However, the authors point out the unsustainable nature of such a solution due to the limited changeability and limited reusability that it brings to 3D models.</p>
+
+<p><strong>Model file sizes:</strong></p>
+<ul>
+  <li>The size of 3D models depends on their representation model</li>
+</ul>
+
+<p>For that matter, <em>Havemann, Sven, and Dieter W. Fellner (2005)</em> recognize the potential of <em>progressive meshes</em> to effectively reduce a 3D model’s file size. Nevertheless, the authors enumerate significant problems still remaining:</p>
+<ol>
+  <li>The complexity of the <em>progressive mesh</em> is still in the order of the input mesh</li>
+  <li>Post-processing mechanisms result in the loss of modeling history</li>
+  <li>Simplification schemes are insensitive to the structure of 3D models</li>
+</ol>
+
+<p><strong>Digital libraries for 3D models:</strong></p>
+<ul>
+  <li>The efficiency of a digital library is highly dependent of the representation formats of the models it stores</li>
+</ul>
+
+<p><strong>Static virtual worlds:</strong></p>
+<ul>
+  <li>The static nature of most virtual worlds and 3D applications inhibiting the possibility of modifying a model’s mesh</li>
+</ul>
+
+<h2 id="an-overview-of-gml">An overview of <em>GML</em>:</h2>
+
+<p>Given the aforementioned challenges and despite <em>GML’s</em> possibility of representing 3D models via triangle meshes, <em>GML</em> encourages following and prioritizes the <em>information reduction paradigm</em> - only the essential information required for 3D model representation is stored - which makes the visual representation of 3D models dependent on its on-demand generation via a runtime engine, drastically reducing their corresponding file size. Additionally, due to modeling operations residing in a function’s definition, complex shapes can be achieved by the composition of simple modeling operations.</p>
+
+<p>With the above-mentioned factors taken into consideration, <em>Havemann, Sven, and Dieter W. Fellner (2005)</em> structure their proposal on the following principles/ techniques:</p>
+<ul>
+  <li>Catmull/ Clark subdivision surfaces</li>
+  <li>Boundary representation meshes (BRep)</li>
+  <li>Euler operations</li>
+  <li>Stack-based programming language</li>
+</ul>
+
+<p><strong>Combined BRep Meshes (CBRep):</strong>
+Shape representation relies on CBReps and its mesh can be manipulated at runtime through Euler operators. Additionally, this form of representation has a number of benefits when compared to solely using triangular meshes, namely a higher degree of abstraction.</p>
+
+<p><strong>Euler Operators:</strong>
+Euler operators allow for the modification of a shape’s mesh by changing both its connectivity and geometry. As such, to support the modeling of any orientable manifold mesh, there are 5 possible operations followed by their inverses, comprising 10 operations in total. It is worth noting that, for each operation, <strong><em>V</em></strong> is short for <em>Vertex</em>, <strong><em>E</em></strong> for <em>Edge</em>, <strong><em>F</em></strong> for <em>Face</em>, <strong><em>S</em></strong> for <em>Shell</em>, <strong><em>R</em></strong> for <em>Ring</em>, and <strong><em>H</em></strong> for <em>Hole</em>. The operators are:</p>
+<ol>
+  <li><strong><em>makeVEFS</em></strong> - creates a new connected component consisting of two vertices connected via a pair of half-edges - and its inverse <strong><em>killVEFS</em></strong></li>
+  <li><strong><em>makeEV</em></strong> - creates an edge and a vertex - and its inverse <strong><em>killEV</em></strong></li>
+  <li><strong><em>makeEF</em></strong> - splits a face by making an edge between two of its vertices - and its inverse <strong><em>killEF</em></strong></li>
+  <li><strong><em>killEmakeR</em></strong> - creates a ring from an edge - and its inverse <strong><em>makeEkillR</em></strong></li>
+  <li><strong><em>killFmakeRH</em></strong> - turns a smaller face into a ring of the bigger face - and its inverse <strong><em>makeFkillRH</em></strong></li>
+</ol>
+
+<p><strong>Euler Macros:</strong>
+<em>Havemann, Sven, and Dieter W. Fellner (2005)</em> propose a logging mechanism to easily undo and redo operations on a model’s mesh. This mechanism is responsible for storing Euler operations which when grouped together are termed as Euler macros. As such, to undo a set of Euler operations on a model’s mesh, the Euler macro associated to that very set is traversed back to front with its corresponding inverse operators being executed. Moreover, it is worth noting Euler macros are stored within a macro graph, given that there is a dependency between Euler macros, more specifically - if a given operator within a macro received an input value produced by another macro, the latter macro is considered to be the parent of the former macro. As such, if one desires to undo a parent macro, the child macro must be undone first - the inverse applies for a redo operation.</p>
+
+<p><strong><em>GML</em> and operator libraries:</strong>
+<em>GML</em> is based upon Adobe’s Postscript language and, in order to appropriately execute the necessary 3D modeling operations, it makes use of a set of operations conveniently organized in <em>C++</em> libraries:</p>
+<ol>
+  <li>Core - Basic Postscript operations</li>
+  <li>Geometry - Vector algebra operations and additional operations for computing distances and projections</li>
+  <li>CBRep - Functionalities pertaining to Euler operators and Euler macros</li>
+  <li>Modeling - High-level modeling operations (extrude, polygon/ face conversions, among others)</li>
+  <li>Interaction - Input handling and visual display</li>
+</ol>
+
+<h2 id="comments-and-more">Comments and more:</h2>
+
+<p><em>Havemann, Sven, and Dieter W. Fellner (2005)</em> propose an interesting and powerful approach for procedural modeling that targets the interactive aspects of 3D modeling - an extremely important aspect for <em>CAD</em> that has the potential to allow architects to explore different architectural designs to a great extent, stemming from a base structural model. However, its implementation based on Adobe’s Postscript language seems rather convoluted and could be further simplified.</p>
+
+<h2 id="references">References:</h2>
+
+<p><em>Havemann, S., &amp; Fellner, D. W. (2005). Generative mesh modeling.</em></p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/tags/#boundary-representation" class="page__taxonomy-item p-category" rel="tag">Boundary Representation</a><span class="sep">, </span>
+    
+      <a href="/tags/#euler-operations" class="page__taxonomy-item p-category" rel="tag">Euler Operations</a><span class="sep">, </span>
+    
+      <a href="/tags/#gml" class="page__taxonomy-item p-category" rel="tag">GML</a><span class="sep">, </span>
+    
+      <a href="/tags/#procedural-modeling" class="page__taxonomy-item p-category" rel="tag">Procedural Modeling</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/categories/#thesis" class="page__taxonomy-item p-category" rel="tag">Thesis</a>
+    
+    </span>
+  </p>
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2022-11-06T00:00:00+00:00">November 6, 2022</time></p>
+
+      </footer>
+
+      
+
+      
+  <nav class="pagination">
+    
+      <a href="/thesis/procedural-modeling-of-buildings/" class="pagination--pager" title="An overview of Müller, P. et al (2006) ‘Procedural modeling of buildings’
+">Previous</a>
+    
+    
+      <a href="#" class="pagination--pager disabled">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h2 class="page__related-title">You may also enjoy</h2>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/thesis/procedural-modeling-of-buildings/" rel="permalink">An overview of Müller, P. et al (2006) ‘Procedural modeling of buildings’
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2022-11-01T00:00:00+00:00">November 1, 2022</time>
+      </span>
+    
+
+    <span class="page__meta-sep"></span>
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
+        
+          6 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Disclaimer:
+
+
+  This post serves as a mere summary of the aforementioned research paper for organizational purposes which will hopefully come in useful for t...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/thesis/thesis-intro/" rel="permalink">A brief introduction to my thesis: Procedural Modeling of Architectonic Shapes
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2022-10-30T00:00:00+01:00">October 30, 2022</time>
+      </span>
+    
+
+    <span class="page__meta-sep"></span>
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">I am an MSc. Computer Science and Engineering student at Instituto Superior Técnico specializing in Software Engineering, Artificial Intelligence, and Intell...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/blog-intro/" rel="permalink">An intro to my blog
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2022-10-30T00:00:00+01:00">October 30, 2022</time>
+      </span>
+    
+
+    <span class="page__meta-sep"></span>
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">This blog will serve as a simple portfolio where I will be showcasing projects that I’m working and have worked on, be it of academic, professional or sponta...</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2022 Lourenço Mourão. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

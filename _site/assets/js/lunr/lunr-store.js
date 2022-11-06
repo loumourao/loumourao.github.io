@@ -6,14 +6,20 @@ var store = [{
         "teaser": null
       },{
         "title": "A brief introduction to my thesis: Procedural Modeling of Architectonic Shapes",
-        "excerpt":"My thesis aims at exploring and applying procedural modeling techniques for modeling both structural and ornamental assets inherent to that of the architectural domain. Additionally, my thesis will also present a reflection concerning already existing solutions for procedural modeling techniques applied to architecture - their benefits and limitations - as...","categories": ["Thesis"],
+        "excerpt":"I am an MSc. Computer Science and Engineering student at Instituto Superior Técnico specializing in Software Engineering, Artificial Intelligence, and Intelligent Robotics. Having completed most of the courses of the aforementioned specializations, I am now starting my thesis as a trainee at INESC-ID under the supervision of Prof. António Paulo...","categories": ["Thesis"],
         "tags": [],
         "url": "/thesis/thesis-intro/",
         "teaser": null
       },{
         "title": "An overview of Müller, P. et al (2006) 'Procedural modeling of buildings'",
         "excerpt":"Disclaimer: This post serves as a mere summary of the aforementioned research paper for organizational purposes which will hopefully come in useful for the completion of my thesis’ report. I will carefully attempt to appropriately cite and quote the authors’ work so that their intellectual property is preserved. As a...","categories": ["Thesis"],
-        "tags": ["Shape Grammars","L-Systems"],
+        "tags": ["Procedural Modeling","Shape Grammars","L-Systems"],
         "url": "/thesis/procedural-modeling-of-buildings/",
+        "teaser": null
+      },{
+        "title": "An overview of Havemann, Sven, and Dieter W. Fellner. (2005) 'Generative mesh modeling'",
+        "excerpt":"Disclaimer: This post serves as a mere summary of the aforementioned research paper for organizational purposes which will hopefully come in useful for the completion of my thesis’ report. I will carefully attempt to appropriately cite and quote the authors’ work so that their intellectual property is preserved. As a...","categories": ["Thesis"],
+        "tags": ["Procedural Modeling","Euler Operations","Boundary Representation","GML"],
+        "url": "/thesis/generative-mesh-modeling/",
         "teaser": null
       }]

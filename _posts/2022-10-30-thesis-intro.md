@@ -6,7 +6,7 @@ categories:
 
 I am an MSc. Computer Science and Engineering student at Instituto Superior Técnico specializing in Software Engineering, Artificial Intelligence, and Intelligent Robotics. 
 
-Having completed most of the courses of the aforementioned specializations, I am now starting my thesis as a trainee at INESC-ID under the supervision of Prof. António Paulo Teles de Menezes Correia Leitão - whom I deeply value for his vast knowledge and thoughtful educational approach.
+Having completed most of the courses of the aforementioned specializations, I am now starting my thesis as a *Research Intern* at INESC-ID under the supervision of Prof. António Paulo Teles de Menezes Correia Leitão - whom I deeply value for his vast knowledge and thoughtful educational approach.
 
 My thesis aims at exploring and applying procedural modeling techniques for modeling both structural and ornamental assets inherent to that of the architectural domain.
 

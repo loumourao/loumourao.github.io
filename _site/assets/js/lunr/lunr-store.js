@@ -6,7 +6,7 @@ var store = [{
         "teaser": null
       },{
         "title": "A brief introduction to my thesis: Procedural Modeling of Architectonic Shapes",
-        "excerpt":"I am an MSc. Computer Science and Engineering student at Instituto Superior Técnico specializing in Software Engineering, Artificial Intelligence, and Intelligent Robotics. Having completed most of the courses of the aforementioned specializations, I am now starting my thesis as a trainee at INESC-ID under the supervision of Prof. António Paulo...","categories": ["Thesis"],
+        "excerpt":"I am an MSc. Computer Science and Engineering student at Instituto Superior Técnico specializing in Software Engineering, Artificial Intelligence, and Intelligent Robotics. Having completed most of the courses of the aforementioned specializations, I am now starting my thesis as a Research Intern at INESC-ID under the supervision of Prof. António...","categories": ["Thesis"],
         "tags": [],
         "url": "/thesis/thesis-intro/",
         "teaser": null

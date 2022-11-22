@@ -1,0 +1,745 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>An overview of Smelik, Ruben M., et al. (2014) ‘A survey on procedural modelling for virtual worlds’ - Lourenço’s Blog</title>
+<meta name="description" content="Disclaimer:     This post serves as a mere summary of the aforementioned research paper for organizational purposes which will hopefully come in useful for the completion of my thesis’ report   I will carefully attempt to appropriately cite and quote the authors’ work so that their intellectual property is preserved   As a natural side effect of the paper’s publication date, the notion of time relative to that of grammatical conjugation within this overview might not old true to current standards   Details regarding technically heavy terminology and implementation are excluded from this overview and will be reserved for future analysis   Personal comments of my authorship (if any) with regards to the research paper in question will be clearly delimited from the overview in the ‘Comments and more’ section   Overview:  The Smelik, Ruben M., et al. (2014) ‘A survey on procedural modelling for virtual worlds’ paper surveys procedural methods applied to a myriad of areas inherent to the virtual worlds domain and identifies aspects pertaining to procedural modeling that may contribute to its lack of widespread acceptance among non-technical and creative professionals. Additionally, the survey analyzes two important features relative to each procedural method that are crucial to its end users - the method’s degree of intuitive control and of interactivity - and also highlights promising research results within this field.  Due to my thesis’ scope, this overview will solely focus on the survey’s references to procedural methods applied to buildings.  Main goals of this paper:  In this survey, Smelik, Ruben M., et al. (2014) aim at addressing the following topics:    Introduction of procedural methods   Classification of procedural methods   Overview of procedural modeling advancements   Evaluation of procedural methods according to a pre-determined criteria   Identification of open issues   Identification of promising research paths   Smelik, Ruben M., et al. (2014) categorize procedural models as generative representations of the following:    Nature inspired processes   Man-centered processes   Additionally, Smelik, Ruben M., et al. (2014) established a set of criteria to evaluate each procedural method:    Intuitiveness and ease of use   Degree of user control   Classifications (e.g., grammars, data-driven, etc) and scope of application (e.g., buildings, terrain, etc)   Advantages of Procedural Modeling:  Smelik, Ruben M., et al. (2014) enumerated the following advantages associated to procedural modeling:    Data amplification - The procedural model’s ability to produce a broad variety of outputs stemming from a few generation rules and a simple set of inputs   Data compression - Geometric models can be represented by functions and respective parameters and its 3D model can then be generated on-demand   Productivity gain - The potential to significantly reduce the amount of modeling effort when modeling 3D assets   Challenges of Procedural Modeling:  Despite the numerous benefits that procedural modeling has brought to creative professionals, Smelik, Ruben M., et al. (2014) observe that procedural methods do not yet represent a satisfying enough alternative to manual modeling due to relevant challenges yet to overcome, namely:    Non-intuitive rules and input parameters where the slightest parametric modification can lead to unpredictable results - which results in procedural methods purposefully limiting user controllability   Heterogenous procedural methods typically do not work together - which means that integrating these models involves extensive manual effort   This leaves a substantial and unwanted side effect in procedural modeling - the fact that end users either reuse provided models or randomly tweak a model’s parameters until they achieve an acceptable output.  Procedural Modeling applied to buildings:  With regards to procedural modeling applied to buildings, Smelik, Ruben M., et al. (2014) consider it one of the best-developed procedural modeling areas and enumerate the most recurrent methods within this subdomain:    L-Systems   Split Grammars   Shape Grammars   Smelik, Ruben M., et al. (2014) also refer to procedural façade generation - a sub-area of building generation where the modeling of façades is structured upon split grammars combined with forward and inverse modeling approaches.  Smelik, Ruben M., et al. (2014) enumerate the following papers:    Parish, Yoav IH, and Pascal Müller. (2001) “Procedural modeling of cities.” (useful to produce simple building offices)   Greuter, Stefan, et al. (2003) “Real-time procedural generation of ‘pseudo infinite’ cities.” (useful to produce simple building offices)   Wonka, Peter, et al. (2003) “Instant architecture.” (a parametric context-free split grammar to produce building models)   Müller, P. et al (2006) ‘Procedural modeling of buildings’ (an extension of split grammars to computer generated architecture)   Yong, Liu, et al. (2004) “Semantic modeling project: Building vernacular house of southeast China.” (an extended shape grammar to create vernacular-style Chinese houses)   Despite the ability of shape grammars to generate high visual fidelity models, they lack semantic information regarding each shape’s role within the building. As such, Smelik, Ruben M., et al. (2014) mention Finkenzeller, Dieter, and Jan Bender. (2008) “Semantic representation of complex building structures.” approach to capture this semantic information.  Additionally, Smelik, Ruben M., et al. (2014) mention that defining suitable shape grammars is a complex process and refer to recent approaches that aim at addressing that problem:    Lipp, Markus, Peter Wonka, and Michael Wimmer. (2008) “Interactive visual editing of grammars for procedural architecture.” (a visually interactive system for shape grammar editing)   Silva, Pedro Brandão, et al. (2013) “Node-based shape grammar representation and editing.” (a dataflow graph representation to provide grammar structure awareness)   Finally, despite Smelik, Ruben M., et al. (2014) recognition that these methods are capable of generating buildings with a high level-of-detail, and referring to shape grammars as the most developed and compact method for representing buildings, they mention the methods’ inherent necessity for authoring effort in order to produce acceptable outputs.  Available Systems for Procedural Modeling:  With the aforementioned aspects of Smelik, Ruben M., et al. (2014) survey taken into consideration, the authors list a set of both commercially and freely available procedural modeling tools which they consider to be representative of the state of art. As such, for procedural modeling of buildings, we have the following tools:  CityEngine - A city generator based on Müller, P. et al (2006) ‘Procedural modeling of buildings’ CGA Shape that allows for interactive modeling, user assisted writing, and interpretation of CGA rules.  Houdini - A versatile tool for creating procedural methods via a visual editor composed of a graph of geometric and mathematical operations.  Possible directions for tackling with Procedural Modeling challenges:  Taking into consideration the previously mentioned challenges, Smelik, Ruben M., et al. (2014) highlight a set of approaches aimed at diminishing the disadvantages that these challenges bring.  With the degree of intuitive control in mind, we have the following approaches:  Sketch-based techniques - A system where intuitive techniques, such as sketching, serve as input to a model that derives its parametric features - putting it among the most promising approaches to interactive procedural modeling and bringing it closer to creative professionals who recurrently use sketching as a means of expressing their ideas  Visual editors - Visual node-based editors representing the flow of data that is being processed (e.g., geometric and mathematical operations) that aim at automating the generation of grammar production rules  Inverse procedural modeling - An approach that attempts to find a procedural representation of a given input (e.g., finding a model’s rules and parameters) whose main advantage is that it leaves the designer outside of the process. Apart from that advantage, the remaining disadvantages and advantages of procedural modeling remain  However, when it comes to integrating heterogenous procedural methods, Smelik, Ruben M., et al. (2014) warn that, in order to design complete virtual worlds, heterogenous content will have to be implemented and maintained together within a framework or engine. Additionally, Smelik, Ruben M., et al. (2014) point out that there is no current mechanism capable of solving this challenge - making it a promising area for future research which will likely be instrumental for the procedural modeling domain.  Comments and more:  Smelik, Ruben M., et al. (2014) present a valuable and broad overview of procedural modeling methods with the purpose of providing a structured state-of-the-art review while highlighting interesting approaches that aim at exploring possible solutions to inevitable challenges associated to procedural modeling. However, it is worth noting the survey’s publication date (2014) as it is only natural that, in the span of 8 years, an extensive body of research might have been conducted.  Additionally, it is crucial to trace a strict distinction between the end users that the authors describe - non-technical and creative professionals - and the end users which my thesis will aim at addressing - architects that resort to computer aided design (whose skill set, in my opinion, belong to both the creative and technical domain).  Taking that distinction into consideration, a fundamental change of perspective arises when considering the challenges enumerated by Smelik, Ruben M., et al. (2014), more specifically, the level of comprehension concerning a given user with regards to modeling via functions and respective parametric changes that can be preformed by the means of procedural methods.  As such, one can argue that architects have a clear understanding of both mathematical and geometric operations that are commonly used to define simple shapes, complex shapes, and respective combinations that can be performed in order to achieve the desired outcome. Naturally, this translates to a high-level of comprehension when it comes to the mapping of these operations to computer aided design - as most, if not all, of these operations are the common denominators of procedural modeling. For that matter, the only problem remaining for architects to efficiently resort to procedural modeling tools is to grasp the simple concepts associated to programming languages, namely function definition, arithmetic operations, and possible use of libraries specifically oriented to architectural modeling - this problem is already being explored in academia, as courses specifically designed to provide a solid background of programming fundamentals is becoming transversal to many technologically reliant areas (e.g., engineering, among others)  Moreover, one recurrent concept for the procedural modeling of buildings, which the architectural domain is familiar with, is shape grammars. As Smelik, Ruben M., et al. (2014) referred, and rightly so, defining and maintaining shape grammar rules is quite complex. As such, Smelik, Ruben M., et al. (2014) mention visual editors resorting to dataflow graphs as an approach that aims at addressing this problem. However, in my opinion, these naturally lead to increasingly complex relationships between nodes of this graph that, as the modeling progresses, ultimately lead to insurmountable visual clutter that may hinder the modeler’s overall comprehension associated to their project.  Finally, it is worth highlighting the main advantage associated to procedural modeling enumerated by Smelik, Ruben M., et al. (2014):  Data amplification - Which I believe holds great potential to explore alternative creative paths when projecting architectural ornaments and structures to a given building, such as combining different architectural styles to create an eclectic building, or even for architects to be surprised by the multitude of different combinations that can be produced by procedural methods (from which they may draw inspiration)">
+
+
+  <meta name="author" content="Lourenço Mourão">
+  
+  <meta property="article:author" content="Lourenço Mourão">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Lourenço's Blog">
+<meta property="og:title" content="An overview of Smelik, Ruben M., et al. (2014) ‘A survey on procedural modelling for virtual worlds’">
+<meta property="og:url" content="http://localhost:4000/thesis/procedural-modeling-survey/">
+
+
+  <meta property="og:description" content="Disclaimer:     This post serves as a mere summary of the aforementioned research paper for organizational purposes which will hopefully come in useful for the completion of my thesis’ report   I will carefully attempt to appropriately cite and quote the authors’ work so that their intellectual property is preserved   As a natural side effect of the paper’s publication date, the notion of time relative to that of grammatical conjugation within this overview might not old true to current standards   Details regarding technically heavy terminology and implementation are excluded from this overview and will be reserved for future analysis   Personal comments of my authorship (if any) with regards to the research paper in question will be clearly delimited from the overview in the ‘Comments and more’ section   Overview:  The Smelik, Ruben M., et al. (2014) ‘A survey on procedural modelling for virtual worlds’ paper surveys procedural methods applied to a myriad of areas inherent to the virtual worlds domain and identifies aspects pertaining to procedural modeling that may contribute to its lack of widespread acceptance among non-technical and creative professionals. Additionally, the survey analyzes two important features relative to each procedural method that are crucial to its end users - the method’s degree of intuitive control and of interactivity - and also highlights promising research results within this field.  Due to my thesis’ scope, this overview will solely focus on the survey’s references to procedural methods applied to buildings.  Main goals of this paper:  In this survey, Smelik, Ruben M., et al. (2014) aim at addressing the following topics:    Introduction of procedural methods   Classification of procedural methods   Overview of procedural modeling advancements   Evaluation of procedural methods according to a pre-determined criteria   Identification of open issues   Identification of promising research paths   Smelik, Ruben M., et al. (2014) categorize procedural models as generative representations of the following:    Nature inspired processes   Man-centered processes   Additionally, Smelik, Ruben M., et al. (2014) established a set of criteria to evaluate each procedural method:    Intuitiveness and ease of use   Degree of user control   Classifications (e.g., grammars, data-driven, etc) and scope of application (e.g., buildings, terrain, etc)   Advantages of Procedural Modeling:  Smelik, Ruben M., et al. (2014) enumerated the following advantages associated to procedural modeling:    Data amplification - The procedural model’s ability to produce a broad variety of outputs stemming from a few generation rules and a simple set of inputs   Data compression - Geometric models can be represented by functions and respective parameters and its 3D model can then be generated on-demand   Productivity gain - The potential to significantly reduce the amount of modeling effort when modeling 3D assets   Challenges of Procedural Modeling:  Despite the numerous benefits that procedural modeling has brought to creative professionals, Smelik, Ruben M., et al. (2014) observe that procedural methods do not yet represent a satisfying enough alternative to manual modeling due to relevant challenges yet to overcome, namely:    Non-intuitive rules and input parameters where the slightest parametric modification can lead to unpredictable results - which results in procedural methods purposefully limiting user controllability   Heterogenous procedural methods typically do not work together - which means that integrating these models involves extensive manual effort   This leaves a substantial and unwanted side effect in procedural modeling - the fact that end users either reuse provided models or randomly tweak a model’s parameters until they achieve an acceptable output.  Procedural Modeling applied to buildings:  With regards to procedural modeling applied to buildings, Smelik, Ruben M., et al. (2014) consider it one of the best-developed procedural modeling areas and enumerate the most recurrent methods within this subdomain:    L-Systems   Split Grammars   Shape Grammars   Smelik, Ruben M., et al. (2014) also refer to procedural façade generation - a sub-area of building generation where the modeling of façades is structured upon split grammars combined with forward and inverse modeling approaches.  Smelik, Ruben M., et al. (2014) enumerate the following papers:    Parish, Yoav IH, and Pascal Müller. (2001) “Procedural modeling of cities.” (useful to produce simple building offices)   Greuter, Stefan, et al. (2003) “Real-time procedural generation of ‘pseudo infinite’ cities.” (useful to produce simple building offices)   Wonka, Peter, et al. (2003) “Instant architecture.” (a parametric context-free split grammar to produce building models)   Müller, P. et al (2006) ‘Procedural modeling of buildings’ (an extension of split grammars to computer generated architecture)   Yong, Liu, et al. (2004) “Semantic modeling project: Building vernacular house of southeast China.” (an extended shape grammar to create vernacular-style Chinese houses)   Despite the ability of shape grammars to generate high visual fidelity models, they lack semantic information regarding each shape’s role within the building. As such, Smelik, Ruben M., et al. (2014) mention Finkenzeller, Dieter, and Jan Bender. (2008) “Semantic representation of complex building structures.” approach to capture this semantic information.  Additionally, Smelik, Ruben M., et al. (2014) mention that defining suitable shape grammars is a complex process and refer to recent approaches that aim at addressing that problem:    Lipp, Markus, Peter Wonka, and Michael Wimmer. (2008) “Interactive visual editing of grammars for procedural architecture.” (a visually interactive system for shape grammar editing)   Silva, Pedro Brandão, et al. (2013) “Node-based shape grammar representation and editing.” (a dataflow graph representation to provide grammar structure awareness)   Finally, despite Smelik, Ruben M., et al. (2014) recognition that these methods are capable of generating buildings with a high level-of-detail, and referring to shape grammars as the most developed and compact method for representing buildings, they mention the methods’ inherent necessity for authoring effort in order to produce acceptable outputs.  Available Systems for Procedural Modeling:  With the aforementioned aspects of Smelik, Ruben M., et al. (2014) survey taken into consideration, the authors list a set of both commercially and freely available procedural modeling tools which they consider to be representative of the state of art. As such, for procedural modeling of buildings, we have the following tools:  CityEngine - A city generator based on Müller, P. et al (2006) ‘Procedural modeling of buildings’ CGA Shape that allows for interactive modeling, user assisted writing, and interpretation of CGA rules.  Houdini - A versatile tool for creating procedural methods via a visual editor composed of a graph of geometric and mathematical operations.  Possible directions for tackling with Procedural Modeling challenges:  Taking into consideration the previously mentioned challenges, Smelik, Ruben M., et al. (2014) highlight a set of approaches aimed at diminishing the disadvantages that these challenges bring.  With the degree of intuitive control in mind, we have the following approaches:  Sketch-based techniques - A system where intuitive techniques, such as sketching, serve as input to a model that derives its parametric features - putting it among the most promising approaches to interactive procedural modeling and bringing it closer to creative professionals who recurrently use sketching as a means of expressing their ideas  Visual editors - Visual node-based editors representing the flow of data that is being processed (e.g., geometric and mathematical operations) that aim at automating the generation of grammar production rules  Inverse procedural modeling - An approach that attempts to find a procedural representation of a given input (e.g., finding a model’s rules and parameters) whose main advantage is that it leaves the designer outside of the process. Apart from that advantage, the remaining disadvantages and advantages of procedural modeling remain  However, when it comes to integrating heterogenous procedural methods, Smelik, Ruben M., et al. (2014) warn that, in order to design complete virtual worlds, heterogenous content will have to be implemented and maintained together within a framework or engine. Additionally, Smelik, Ruben M., et al. (2014) point out that there is no current mechanism capable of solving this challenge - making it a promising area for future research which will likely be instrumental for the procedural modeling domain.  Comments and more:  Smelik, Ruben M., et al. (2014) present a valuable and broad overview of procedural modeling methods with the purpose of providing a structured state-of-the-art review while highlighting interesting approaches that aim at exploring possible solutions to inevitable challenges associated to procedural modeling. However, it is worth noting the survey’s publication date (2014) as it is only natural that, in the span of 8 years, an extensive body of research might have been conducted.  Additionally, it is crucial to trace a strict distinction between the end users that the authors describe - non-technical and creative professionals - and the end users which my thesis will aim at addressing - architects that resort to computer aided design (whose skill set, in my opinion, belong to both the creative and technical domain).  Taking that distinction into consideration, a fundamental change of perspective arises when considering the challenges enumerated by Smelik, Ruben M., et al. (2014), more specifically, the level of comprehension concerning a given user with regards to modeling via functions and respective parametric changes that can be preformed by the means of procedural methods.  As such, one can argue that architects have a clear understanding of both mathematical and geometric operations that are commonly used to define simple shapes, complex shapes, and respective combinations that can be performed in order to achieve the desired outcome. Naturally, this translates to a high-level of comprehension when it comes to the mapping of these operations to computer aided design - as most, if not all, of these operations are the common denominators of procedural modeling. For that matter, the only problem remaining for architects to efficiently resort to procedural modeling tools is to grasp the simple concepts associated to programming languages, namely function definition, arithmetic operations, and possible use of libraries specifically oriented to architectural modeling - this problem is already being explored in academia, as courses specifically designed to provide a solid background of programming fundamentals is becoming transversal to many technologically reliant areas (e.g., engineering, among others)  Moreover, one recurrent concept for the procedural modeling of buildings, which the architectural domain is familiar with, is shape grammars. As Smelik, Ruben M., et al. (2014) referred, and rightly so, defining and maintaining shape grammar rules is quite complex. As such, Smelik, Ruben M., et al. (2014) mention visual editors resorting to dataflow graphs as an approach that aims at addressing this problem. However, in my opinion, these naturally lead to increasingly complex relationships between nodes of this graph that, as the modeling progresses, ultimately lead to insurmountable visual clutter that may hinder the modeler’s overall comprehension associated to their project.  Finally, it is worth highlighting the main advantage associated to procedural modeling enumerated by Smelik, Ruben M., et al. (2014):  Data amplification - Which I believe holds great potential to explore alternative creative paths when projecting architectural ornaments and structures to a given building, such as combining different architectural styles to create an eclectic building, or even for architects to be surprised by the multitude of different combinations that can be produced by procedural methods (from which they may draw inspiration)">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2022-11-22T00:00:00+00:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/thesis/procedural-modeling-survey/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Lourenço Mourão",
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Lourenço's Blog Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single wide">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Lourenço's Blog
+          
+        </a>
+        <ul class="visible-links"></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+    <div class="author__avatar">
+      <a href="http://localhost:4000/">
+        <img src="/assets/images/blog_avatar.png" alt="Lourenço Mourão" itemprop="image" class="u-photo">
+      </a>
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="http://localhost:4000/" itemprop="url">Lourenço Mourão</a>
+    </h3>
+    
+      <div class="author__bio p-note" itemprop="description">
+        <p>MSc. Computer Science and Engineering @ Instituto Superior Técnico</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name" class="p-locality">Lisbon, Portugal</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="mailto:lourenco.mourao@protonmail.com" rel="nofollow noopener noreferrer me"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span></a></li>
+          
+        
+          
+            <li><a href="https://github.com/loumourao" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+          
+            <li><a href="https://pt.linkedin.com/in/lourencomourao" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span class="label">LinkedIn</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="An overview of Smelik, Ruben M., et al. (2014) ‘A survey on procedural modelling for virtual worlds’">
+    <meta itemprop="description" content="Disclaimer:  This post serves as a mere summary of the aforementioned research paper for organizational purposes which will hopefully come in useful for the completion of my thesis’ report  I will carefully attempt to appropriately cite and quote the authors’ work so that their intellectual property is preserved  As a natural side effect of the paper’s publication date, the notion of time relative to that of grammatical conjugation within this overview might not old true to current standards  Details regarding technically heavy terminology and implementation are excluded from this overview and will be reserved for future analysis  Personal comments of my authorship (if any) with regards to the research paper in question will be clearly delimited from the overview in the ‘Comments and more’ sectionOverview:The Smelik, Ruben M., et al. (2014) ‘A survey on procedural modelling for virtual worlds’ paper surveys procedural methods applied to a myriad of areas inherent to the virtual worlds domain and identifies aspects pertaining to procedural modeling that may contribute to its lack of widespread acceptance among non-technical and creative professionals. Additionally, the survey analyzes two important features relative to each procedural method that are crucial to its end users - the method’s degree of intuitive control and of interactivity - and also highlights promising research results within this field.Due to my thesis’ scope, this overview will solely focus on the survey’s references to procedural methods applied to buildings.Main goals of this paper:In this survey, Smelik, Ruben M., et al. (2014) aim at addressing the following topics:  Introduction of procedural methods  Classification of procedural methods  Overview of procedural modeling advancements  Evaluation of procedural methods according to a pre-determined criteria  Identification of open issues  Identification of promising research pathsSmelik, Ruben M., et al. (2014) categorize procedural models as generative representations of the following:  Nature inspired processes  Man-centered processesAdditionally, Smelik, Ruben M., et al. (2014) established a set of criteria to evaluate each procedural method:  Intuitiveness and ease of use  Degree of user control  Classifications (e.g., grammars, data-driven, etc) and scope of application (e.g., buildings, terrain, etc)Advantages of Procedural Modeling:Smelik, Ruben M., et al. (2014) enumerated the following advantages associated to procedural modeling:  Data amplification - The procedural model’s ability to produce a broad variety of outputs stemming from a few generation rules and a simple set of inputs  Data compression - Geometric models can be represented by functions and respective parameters and its 3D model can then be generated on-demand  Productivity gain - The potential to significantly reduce the amount of modeling effort when modeling 3D assetsChallenges of Procedural Modeling:Despite the numerous benefits that procedural modeling has brought to creative professionals, Smelik, Ruben M., et al. (2014) observe that procedural methods do not yet represent a satisfying enough alternative to manual modeling due to relevant challenges yet to overcome, namely:  Non-intuitive rules and input parameters where the slightest parametric modification can lead to unpredictable results - which results in procedural methods purposefully limiting user controllability  Heterogenous procedural methods typically do not work together - which means that integrating these models involves extensive manual effortThis leaves a substantial and unwanted side effect in procedural modeling - the fact that end users either reuse provided models or randomly tweak a model’s parameters until they achieve an acceptable output.Procedural Modeling applied to buildings:With regards to procedural modeling applied to buildings, Smelik, Ruben M., et al. (2014) consider it one of the best-developed procedural modeling areas and enumerate the most recurrent methods within this subdomain:  L-Systems  Split Grammars  Shape GrammarsSmelik, Ruben M., et al. (2014) also refer to procedural façade generation - a sub-area of building generation where the modeling of façades is structured upon split grammars combined with forward and inverse modeling approaches.Smelik, Ruben M., et al. (2014) enumerate the following papers:  Parish, Yoav IH, and Pascal Müller. (2001) “Procedural modeling of cities.” (useful to produce simple building offices)  Greuter, Stefan, et al. (2003) “Real-time procedural generation of ‘pseudo infinite’ cities.” (useful to produce simple building offices)  Wonka, Peter, et al. (2003) “Instant architecture.” (a parametric context-free split grammar to produce building models)  Müller, P. et al (2006) ‘Procedural modeling of buildings’ (an extension of split grammars to computer generated architecture)  Yong, Liu, et al. (2004) “Semantic modeling project: Building vernacular house of southeast China.” (an extended shape grammar to create vernacular-style Chinese houses)Despite the ability of shape grammars to generate high visual fidelity models, they lack semantic information regarding each shape’s role within the building. As such, Smelik, Ruben M., et al. (2014) mention Finkenzeller, Dieter, and Jan Bender. (2008) “Semantic representation of complex building structures.” approach to capture this semantic information.Additionally, Smelik, Ruben M., et al. (2014) mention that defining suitable shape grammars is a complex process and refer to recent approaches that aim at addressing that problem:  Lipp, Markus, Peter Wonka, and Michael Wimmer. (2008) “Interactive visual editing of grammars for procedural architecture.” (a visually interactive system for shape grammar editing)  Silva, Pedro Brandão, et al. (2013) “Node-based shape grammar representation and editing.” (a dataflow graph representation to provide grammar structure awareness)Finally, despite Smelik, Ruben M., et al. (2014) recognition that these methods are capable of generating buildings with a high level-of-detail, and referring to shape grammars as the most developed and compact method for representing buildings, they mention the methods’ inherent necessity for authoring effort in order to produce acceptable outputs.Available Systems for Procedural Modeling:With the aforementioned aspects of Smelik, Ruben M., et al. (2014) survey taken into consideration, the authors list a set of both commercially and freely available procedural modeling tools which they consider to be representative of the state of art. As such, for procedural modeling of buildings, we have the following tools:CityEngine - A city generator based on Müller, P. et al (2006) ‘Procedural modeling of buildings’ CGA Shape that allows for interactive modeling, user assisted writing, and interpretation of CGA rules.Houdini - A versatile tool for creating procedural methods via a visual editor composed of a graph of geometric and mathematical operations.Possible directions for tackling with Procedural Modeling challenges:Taking into consideration the previously mentioned challenges, Smelik, Ruben M., et al. (2014) highlight a set of approaches aimed at diminishing the disadvantages that these challenges bring.With the degree of intuitive control in mind, we have the following approaches:Sketch-based techniques - A system where intuitive techniques, such as sketching, serve as input to a model that derives its parametric features - putting it among the most promising approaches to interactive procedural modeling and bringing it closer to creative professionals who recurrently use sketching as a means of expressing their ideasVisual editors - Visual node-based editors representing the flow of data that is being processed (e.g., geometric and mathematical operations) that aim at automating the generation of grammar production rulesInverse procedural modeling - An approach that attempts to find a procedural representation of a given input (e.g., finding a model’s rules and parameters) whose main advantage is that it leaves the designer outside of the process. Apart from that advantage, the remaining disadvantages and advantages of procedural modeling remainHowever, when it comes to integrating heterogenous procedural methods, Smelik, Ruben M., et al. (2014) warn that, in order to design complete virtual worlds, heterogenous content will have to be implemented and maintained together within a framework or engine. Additionally, Smelik, Ruben M., et al. (2014) point out that there is no current mechanism capable of solving this challenge - making it a promising area for future research which will likely be instrumental for the procedural modeling domain.Comments and more:Smelik, Ruben M., et al. (2014) present a valuable and broad overview of procedural modeling methods with the purpose of providing a structured state-of-the-art review while highlighting interesting approaches that aim at exploring possible solutions to inevitable challenges associated to procedural modeling. However, it is worth noting the survey’s publication date (2014) as it is only natural that, in the span of 8 years, an extensive body of research might have been conducted.Additionally, it is crucial to trace a strict distinction between the end users that the authors describe - non-technical and creative professionals - and the end users which my thesis will aim at addressing - architects that resort to computer aided design (whose skill set, in my opinion, belong to both the creative and technical domain).Taking that distinction into consideration, a fundamental change of perspective arises when considering the challenges enumerated by Smelik, Ruben M., et al. (2014), more specifically, the level of comprehension concerning a given user with regards to modeling via functions and respective parametric changes that can be preformed by the means of procedural methods.As such, one can argue that architects have a clear understanding of both mathematical and geometric operations that are commonly used to define simple shapes, complex shapes, and respective combinations that can be performed in order to achieve the desired outcome. Naturally, this translates to a high-level of comprehension when it comes to the mapping of these operations to computer aided design - as most, if not all, of these operations are the common denominators of procedural modeling. For that matter, the only problem remaining for architects to efficiently resort to procedural modeling tools is to grasp the simple concepts associated to programming languages, namely function definition, arithmetic operations, and possible use of libraries specifically oriented to architectural modeling - this problem is already being explored in academia, as courses specifically designed to provide a solid background of programming fundamentals is becoming transversal to many technologically reliant areas (e.g., engineering, among others)Moreover, one recurrent concept for the procedural modeling of buildings, which the architectural domain is familiar with, is shape grammars. As Smelik, Ruben M., et al. (2014) referred, and rightly so, defining and maintaining shape grammar rules is quite complex. As such, Smelik, Ruben M., et al. (2014) mention visual editors resorting to dataflow graphs as an approach that aims at addressing this problem. However, in my opinion, these naturally lead to increasingly complex relationships between nodes of this graph that, as the modeling progresses, ultimately lead to insurmountable visual clutter that may hinder the modeler’s overall comprehension associated to their project.Finally, it is worth highlighting the main advantage associated to procedural modeling enumerated by Smelik, Ruben M., et al. (2014):Data amplification - Which I believe holds great potential to explore alternative creative paths when projecting architectural ornaments and structures to a given building, such as combining different architectural styles to create an eclectic building, or even for architects to be surprised by the multitude of different combinations that can be produced by procedural methods (from which they may draw inspiration)">
+    <meta itemprop="datePublished" content="2022-11-22T00:00:00+00:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="http://localhost:4000/thesis/procedural-modeling-survey/" class="u-url" itemprop="url">An overview of Smelik, Ruben M., et al. (2014) ‘A survey on procedural modelling for virtual worlds’
+</a>
+          </h1>
+          
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2022-11-22T00:00:00+00:00">November 22, 2022</time>
+      </span>
+    
+
+    <span class="page__meta-sep"></span>
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          8 minute read
+        
+      </span>
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+        <h2 id="disclaimer">Disclaimer:</h2>
+
+<ul>
+  <li>This post serves as a mere summary of the aforementioned research paper for organizational purposes which will hopefully come in useful for the completion of my thesis’ report</li>
+  <li>I will carefully attempt to appropriately cite and quote the authors’ work so that their intellectual property is preserved</li>
+  <li>As a natural side effect of the paper’s publication date, the notion of time relative to that of grammatical conjugation within this overview might not old true to current standards</li>
+  <li>Details regarding technically heavy terminology and implementation are excluded from this overview and will be reserved for future analysis</li>
+  <li>Personal comments of my authorship (if any) with regards to the research paper in question will be clearly delimited from the overview in the <strong>‘Comments and more’</strong> section</li>
+</ul>
+
+<h2 id="overview">Overview:</h2>
+
+<p>The <em>Smelik, Ruben M., et al. (2014) ‘A survey on procedural modelling for virtual worlds’</em> paper surveys procedural methods applied to a myriad of areas inherent to the virtual worlds domain and identifies aspects pertaining to procedural modeling that may contribute to its lack of widespread acceptance among non-technical and creative professionals. Additionally, the survey analyzes two important features relative to each procedural method that are crucial to its end users - the method’s degree of intuitive control and of interactivity - and also highlights promising research results within this field.</p>
+
+<p>Due to my thesis’ scope, this overview will solely focus on the survey’s references to procedural methods applied to buildings.</p>
+
+<h2 id="main-goals-of-this-paper">Main goals of this paper:</h2>
+
+<p>In this survey, <em>Smelik, Ruben M., et al. (2014)</em> aim at addressing the following topics:</p>
+<ul>
+  <li>Introduction of procedural methods</li>
+  <li>Classification of procedural methods</li>
+  <li>Overview of procedural modeling advancements</li>
+  <li>Evaluation of procedural methods according to a pre-determined criteria</li>
+  <li>Identification of open issues</li>
+  <li>Identification of promising research paths</li>
+</ul>
+
+<p><em>Smelik, Ruben M., et al. (2014)</em> categorize procedural models as generative representations of the following:</p>
+<ul>
+  <li>Nature inspired processes</li>
+  <li>Man-centered processes</li>
+</ul>
+
+<p>Additionally, <em>Smelik, Ruben M., et al. (2014)</em> established a set of criteria to evaluate each procedural method:</p>
+<ol>
+  <li>Intuitiveness and ease of use</li>
+  <li>Degree of user control</li>
+  <li>Classifications (e.g., grammars, data-driven, etc) and scope of application (e.g., buildings, terrain, etc)</li>
+</ol>
+
+<h2 id="advantages-of-procedural-modeling">Advantages of Procedural Modeling:</h2>
+
+<p><em>Smelik, Ruben M., et al. (2014)</em> enumerated the following advantages associated to procedural modeling:</p>
+<ul>
+  <li>Data amplification - The procedural model’s ability to produce a broad variety of outputs stemming from a few generation rules and a simple set of inputs</li>
+  <li>Data compression - Geometric models can be represented by functions and respective parameters and its 3D model can then be generated on-demand</li>
+  <li>Productivity gain - The potential to significantly reduce the amount of modeling effort when modeling 3D assets</li>
+</ul>
+
+<h2 id="challenges-of-procedural-modeling">Challenges of Procedural Modeling:</h2>
+
+<p>Despite the numerous benefits that procedural modeling has brought to creative professionals, <em>Smelik, Ruben M., et al. (2014)</em> observe that procedural methods do not yet represent a satisfying enough alternative to manual modeling due to relevant challenges yet to overcome, namely:</p>
+<ul>
+  <li>Non-intuitive rules and input parameters where the slightest parametric modification can lead to unpredictable results - which results in procedural methods purposefully limiting user controllability</li>
+  <li>Heterogenous procedural methods typically do not work together - which means that integrating these models involves extensive manual effort</li>
+</ul>
+
+<p>This leaves a substantial and unwanted side effect in procedural modeling - the fact that end users either reuse provided models or randomly tweak a model’s parameters until they achieve an acceptable output.</p>
+
+<h2 id="procedural-modeling-applied-to-buildings">Procedural Modeling applied to buildings:</h2>
+
+<p>With regards to procedural modeling applied to buildings, <em>Smelik, Ruben M., et al. (2014)</em> consider it one of the best-developed procedural modeling areas and enumerate the most recurrent methods within this subdomain:</p>
+<ul>
+  <li>L-Systems</li>
+  <li>Split Grammars</li>
+  <li>Shape Grammars</li>
+</ul>
+
+<p><em>Smelik, Ruben M., et al. (2014)</em> also refer to procedural façade generation - a sub-area of building generation where the modeling of façades is structured upon split grammars combined with forward and inverse modeling approaches.</p>
+
+<p><em>Smelik, Ruben M., et al. (2014)</em> enumerate the following papers:</p>
+<ul>
+  <li><em>Parish, Yoav IH, and Pascal Müller. (2001) “Procedural modeling of cities.”</em> (useful to produce simple building offices)</li>
+  <li><em>Greuter, Stefan, et al. (2003) “Real-time procedural generation of ‘pseudo infinite’ cities.”</em> (useful to produce simple building offices)</li>
+  <li><em>Wonka, Peter, et al. (2003) “Instant architecture.”</em> (a parametric context-free split grammar to produce building models)</li>
+  <li><em>Müller, P. et al (2006) ‘Procedural modeling of buildings’</em> (an extension of split grammars to computer generated architecture)</li>
+  <li><em>Yong, Liu, et al. (2004) “Semantic modeling project: Building vernacular house of southeast China.”</em> (an extended shape grammar to create vernacular-style Chinese houses)</li>
+</ul>
+
+<p>Despite the ability of shape grammars to generate high visual fidelity models, they lack semantic information regarding each shape’s role within the building. As such, <em>Smelik, Ruben M., et al. (2014)</em> mention <em>Finkenzeller, Dieter, and Jan Bender. (2008) “Semantic representation of complex building structures.”</em> approach to capture this semantic information.</p>
+
+<p>Additionally, <em>Smelik, Ruben M., et al. (2014)</em> mention that defining suitable shape grammars is a complex process and refer to recent approaches that aim at addressing that problem:</p>
+<ul>
+  <li><em>Lipp, Markus, Peter Wonka, and Michael Wimmer. (2008) “Interactive visual editing of grammars for procedural architecture.”</em> (a visually interactive system for shape grammar editing)</li>
+  <li><em>Silva, Pedro Brandão, et al. (2013) “Node-based shape grammar representation and editing.”</em> (a dataflow graph representation to provide grammar structure awareness)</li>
+</ul>
+
+<p>Finally, despite <em>Smelik, Ruben M., et al. (2014)</em> recognition that these methods are capable of generating buildings with a high level-of-detail, and referring to shape grammars as the most developed and compact method for representing buildings, they mention the methods’ inherent necessity for authoring effort in order to produce acceptable outputs.</p>
+
+<h2 id="available-systems-for-procedural-modeling">Available Systems for Procedural Modeling:</h2>
+
+<p>With the aforementioned aspects of <em>Smelik, Ruben M., et al. (2014)</em> survey taken into consideration, the authors list a set of both commercially and freely available procedural modeling tools which they consider to be representative of the state of art. As such, for procedural modeling of buildings, we have the following tools:</p>
+
+<p><strong><a href="http://www.esri.com/software/cityengine/">CityEngine</a></strong> - A city generator based on <em>Müller, P. et al (2006) ‘Procedural modeling of buildings’</em> CGA Shape that allows for interactive modeling, user assisted writing, and interpretation of CGA rules.</p>
+
+<p><strong><a href="http://www.sidefx.com/">Houdini</a></strong> - A versatile tool for creating procedural methods via a visual editor composed of a graph of geometric and mathematical operations.</p>
+
+<h2 id="possible-directions-for-tackling-with-procedural-modeling-challenges">Possible directions for tackling with Procedural Modeling challenges:</h2>
+
+<p>Taking into consideration the previously mentioned challenges, <em>Smelik, Ruben M., et al. (2014)</em> highlight a set of approaches aimed at diminishing the disadvantages that these challenges bring.</p>
+
+<p>With the degree of intuitive control in mind, we have the following approaches:</p>
+
+<p><strong>Sketch-based techniques</strong> - A system where intuitive techniques, such as sketching, serve as input to a model that derives its parametric features - putting it among the most promising approaches to interactive procedural modeling and bringing it closer to creative professionals who recurrently use sketching as a means of expressing their ideas</p>
+
+<p><strong>Visual editors</strong> - Visual node-based editors representing the flow of data that is being processed (e.g., geometric and mathematical operations) that aim at automating the generation of grammar production rules</p>
+
+<p><strong>Inverse procedural modeling</strong> - An approach that attempts to find a procedural representation of a given input (e.g., finding a model’s rules and parameters) whose main advantage is that it leaves the designer outside of the process. Apart from that advantage, the remaining disadvantages and advantages of procedural modeling remain</p>
+
+<p>However, when it comes to integrating heterogenous procedural methods, <em>Smelik, Ruben M., et al. (2014)</em> warn that, in order to design complete virtual worlds, heterogenous content will have to be implemented and maintained together within a framework or engine. Additionally, <em>Smelik, Ruben M., et al. (2014)</em> point out that there is no current mechanism capable of solving this challenge - making it a promising area for future research which will likely be instrumental for the procedural modeling domain.</p>
+
+<h2 id="comments-and-more">Comments and more:</h2>
+
+<p><em>Smelik, Ruben M., et al. (2014)</em> present a valuable and broad overview of procedural modeling methods with the purpose of providing a structured state-of-the-art review while highlighting interesting approaches that aim at exploring possible solutions to inevitable challenges associated to procedural modeling. However, it is worth noting the survey’s publication date (2014) as it is only natural that, in the span of 8 years, an extensive body of research might have been conducted.</p>
+
+<p>Additionally, it is crucial to trace a strict distinction between the end users that the authors describe - non-technical and creative professionals - and the end users which my thesis will aim at addressing - architects that resort to computer aided design (whose skill set, in my opinion, belong to both the creative and technical domain).</p>
+
+<p>Taking that distinction into consideration, a fundamental change of perspective arises when considering the challenges enumerated by <em>Smelik, Ruben M., et al. (2014)</em>, more specifically, the level of comprehension concerning a given user with regards to modeling via functions and respective parametric changes that can be preformed by the means of procedural methods.</p>
+
+<p>As such, one can argue that architects have a clear understanding of both mathematical and geometric operations that are commonly used to define simple shapes, complex shapes, and respective combinations that can be performed in order to achieve the desired outcome. Naturally, this translates to a high-level of comprehension when it comes to the mapping of these operations to computer aided design - as most, if not all, of these operations are the common denominators of procedural modeling. For that matter, the only problem remaining for architects to efficiently resort to procedural modeling tools is to grasp the simple concepts associated to programming languages, namely function definition, arithmetic operations, and possible use of libraries specifically oriented to architectural modeling - this problem is already being explored in academia, as courses specifically designed to provide a solid background of programming fundamentals is becoming transversal to many technologically reliant areas (e.g., engineering, among others)</p>
+
+<p>Moreover, one recurrent concept for the procedural modeling of buildings, which the architectural domain is familiar with, is shape grammars. As <em>Smelik, Ruben M., et al. (2014)</em> referred, and rightly so, defining and maintaining shape grammar rules is quite complex. As such, <em>Smelik, Ruben M., et al. (2014)</em> mention visual editors resorting to dataflow graphs as an approach that aims at addressing this problem. However, in my opinion, these naturally lead to increasingly complex relationships between nodes of this graph that, as the modeling progresses, ultimately lead to insurmountable visual clutter that may hinder the modeler’s overall comprehension associated to their project.</p>
+
+<p>Finally, it is worth highlighting the main advantage associated to procedural modeling enumerated by <em>Smelik, Ruben M., et al. (2014)</em>:</p>
+
+<p><strong>Data amplification</strong> - Which I believe holds great potential to explore alternative creative paths when projecting architectural ornaments and structures to a given building, such as combining different architectural styles to create an eclectic building, or even for architects to be surprised by the multitude of different combinations that can be produced by procedural methods (from which they may draw inspiration)</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/tags/#inverse-procedural-modeling" class="page__taxonomy-item p-category" rel="tag">Inverse Procedural Modeling</a><span class="sep">, </span>
+    
+      <a href="/tags/#l-systems" class="page__taxonomy-item p-category" rel="tag">L-Systems</a><span class="sep">, </span>
+    
+      <a href="/tags/#procedural-modeling" class="page__taxonomy-item p-category" rel="tag">Procedural Modeling</a><span class="sep">, </span>
+    
+      <a href="/tags/#shape-grammars" class="page__taxonomy-item p-category" rel="tag">Shape Grammars</a><span class="sep">, </span>
+    
+      <a href="/tags/#sketch-based-procedural-modeling" class="page__taxonomy-item p-category" rel="tag">Sketch-Based Procedural Modeling</a><span class="sep">, </span>
+    
+      <a href="/tags/#survey" class="page__taxonomy-item p-category" rel="tag">Survey</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/categories/#thesis" class="page__taxonomy-item p-category" rel="tag">Thesis</a>
+    
+    </span>
+  </p>
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2022-11-22T00:00:00+00:00">November 22, 2022</time></p>
+
+      </footer>
+
+      
+
+      
+  <nav class="pagination">
+    
+      <a href="/thesis/generative-mesh-modeling/" class="pagination--pager" title="An overview of Havemann, Sven, and Dieter W. Fellner. (2005) ‘Generative mesh modeling’
+">Previous</a>
+    
+    
+      <a href="#" class="pagination--pager disabled">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h2 class="page__related-title">You may also enjoy</h2>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/thesis/generative-mesh-modeling/" rel="permalink">An overview of Havemann, Sven, and Dieter W. Fellner. (2005) ‘Generative mesh modeling’
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2022-11-06T00:00:00+00:00">November 6, 2022</time>
+      </span>
+    
+
+    <span class="page__meta-sep"></span>
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
+        
+          5 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Disclaimer:
+
+
+  This post serves as a mere summary of the aforementioned research paper for organizational purposes which will hopefully come in useful for t...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/thesis/procedural-modeling-of-buildings/" rel="permalink">An overview of Müller, P. et al (2006) ‘Procedural modeling of buildings’
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2022-11-01T00:00:00+00:00">November 1, 2022</time>
+      </span>
+    
+
+    <span class="page__meta-sep"></span>
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
+        
+          6 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Disclaimer:
+
+
+  This post serves as a mere summary of the aforementioned research paper for organizational purposes which will hopefully come in useful for t...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/thesis/thesis-intro/" rel="permalink">A brief introduction to my thesis: Procedural Modeling of Architectonic Shapes
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2022-10-30T00:00:00+01:00">October 30, 2022</time>
+      </span>
+    
+
+    <span class="page__meta-sep"></span>
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">I am an MSc. Computer Science and Engineering student at Instituto Superior Técnico specializing in Software Engineering, Artificial Intelligence, and Intell...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/blog-intro/" rel="permalink">An intro to my blog
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2022-10-30T00:00:00+01:00">October 30, 2022</time>
+      </span>
+    
+
+    <span class="page__meta-sep"></span>
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">This blog will serve as a simple portfolio where I will be showcasing projects that I’m working and have worked on, be it of academic, professional or sponta...</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2022 Lourenço Mourão. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

@@ -11,10 +11,10 @@ tags:
 
 ## Disclaimer:
 
-- This post serves as a mere summary of the aforementioned research paper for organizational purposes which will hopefully come in useful for the completion of my thesis' report.
-- I will carefully attempt to appropriately cite and quote the authors' work so that their intellectual property is preserved.
-- As a natural side effect of the paper's publication date, the notion of time relative to that of grammatical conjugation within this overview might not old true to current standards.
-- Details regarding technically heavy terminology and implementation are excluded from this overview and will be reserved for future analysis.
+- This post serves as a mere summary of the aforementioned research paper for organizational purposes which will hopefully come in useful for the completion of my thesis' report
+- I will carefully attempt to appropriately cite and quote the authors' work so that their intellectual property is preserved
+- As a natural side effect of the paper's publication date, the notion of time relative to that of grammatical conjugation within this overview might not old true to current standards
+- Details regarding technically heavy terminology and implementation are excluded from this overview and will be reserved for future analysis
 - Personal comments of my authorship (if any) with regards to the research paper in question will be clearly delimited from the overview in the **'Comments and more'** section
 
 ## Overview:

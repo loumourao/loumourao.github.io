@@ -1,7 +1,6 @@
 ---
 layout: profiles
-#permalink: /people/
-permalink: /404.html
+permalink: /people/
 title: people
 description: members of the lab or group
 nav: false
